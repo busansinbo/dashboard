@@ -1,0 +1,42 @@
+{
+  "target_province": "부산",
+  "amount_unit": "백만원",
+  "accident_rate_definition": "ytd_accident_net_amount / month_end_guarantee_balance_amount * (days_in_year / elapsed_days) * 100",
+  "age_group_mapping": {
+    "10대 이하": "20대 이하",
+    "20대": "20대 이하",
+    "30대": "30대",
+    "40대": "40대",
+    "50대": "50대",
+    "60대": "60대 이상",
+    "70대": "60대 이상",
+    "80대": "60대 이상",
+    "90대 이상": "60대 이상"
+  },
+  "age_group_order": ["20대 이하", "30대", "40대", "50대", "60대 이상"],
+  "source_headers": {
+    "기준년월": "period",
+    "시도명": "province",
+    "시군구명": "district",
+    "업종구분대분류": "industry_major",
+    "업종구분중분류": "industry_middle",
+    "업종명": "industry_detail",
+    "대표자연령대": "age_group",
+    "업력": "business_age",
+    "보증_실행(신규보증)_건수": "new_guarantee_count",
+    "보증_실행(신규보증)_금액": "new_guarantee_amount",
+    "보증_사고_순증_건수": "accident_net_count",
+    "보증_사고_순증_금액": "accident_net_amount",
+    "보증_잔액_건수": "guarantee_balance_count",
+    "보증_잔액_금액": "guarantee_balance_amount"
+  },
+  "required_transaction_headers": [
+    "기준년월", "시도명", "시군구명", "업종구분대분류", "업종구분중분류",
+    "업종명", "대표자연령대", "업력", "보증_실행(신규보증)_건수",
+    "보증_실행(신규보증)_금액", "보증_사고_순증_건수", "보증_사고_순증_금액"
+  ],
+  "required_balance_headers": [
+    "시도명", "시군구명", "업종구분대분류", "업종구분중분류",
+    "업종명", "대표자연령대", "업력", "보증_잔액_건수", "보증_잔액_금액"
+  ]
+}

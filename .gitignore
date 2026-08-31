@@ -12,3 +12,12 @@ Desktop.ini
 # Local temporary files
 *.tmp
 *.log
+__pycache__/
+*.py[cod]
+
+# Generated data and local analysis outputs
+data/generated/
+.work/
+
+# Immutable local source archives (do not publish)
+source/*.zip

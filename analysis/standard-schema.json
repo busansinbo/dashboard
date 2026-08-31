@@ -1,0 +1,25 @@
+{
+  "description": "5개년 보증·채권 원본의 표준 행 구조",
+  "grain": "기준월 × 지역 × 업종 × 대표자연령대 × 업력",
+  "fields": [
+    { "name": "dataset_type", "type": "string", "values": ["transaction", "balance"], "description": "원본 자료 계열" },
+    { "name": "period", "type": "string", "format": "YYYY-MM", "source": "기준년월 또는 잔액 파일명" },
+    { "name": "province", "type": "string", "source": "시도명" },
+    { "name": "district", "type": "string", "source": "시군구명" },
+    { "name": "industry_major", "type": "string", "source": "업종구분대분류" },
+    { "name": "industry_middle", "type": "string", "source": "업종구분중분류" },
+    { "name": "industry_detail", "type": "string", "source": "업종명" },
+    { "name": "age_group", "type": "string", "source": "대표자연령대" },
+    { "name": "business_age", "type": "string", "source": "업력" },
+    { "name": "new_guarantee_count", "type": "integer", "source": "보증_실행(신규보증)_건수" },
+    { "name": "new_guarantee_amount", "type": "number", "source": "보증_실행(신규보증)_금액", "unit": "백만원" },
+    { "name": "accident_net_count", "type": "integer", "source": "보증_사고_순증_건수" },
+    { "name": "accident_net_amount", "type": "number", "source": "보증_사고_순증_금액", "unit": "백만원" },
+    { "name": "guarantee_balance_count", "type": "integer", "source": "보증_잔액_건수" },
+    { "name": "guarantee_balance_amount", "type": "number", "source": "보증_잔액_금액", "unit": "백만원" },
+    { "name": "accident_rate", "type": "number", "unit": "%", "derived": true, "formula": "{(연간보증사고발생액-연간정상화액)/당월말 보증잔액}×{365(윤년 366)/연간환산일수}×100" }
+  ],
+  "unresolved": [
+    "향후 월별 사고 파일의 실제 파일명 규칙은 첫 신규 파일 수령 후 재확인 필요"
+  ]
+}

@@ -14,27 +14,30 @@
       <a class="brand" href="#" aria-label="부산신용보증재단 통계 홈">
         <img src="assets/ci/ci-h.png" alt="부산신용보증재단 Busan Credit Guarantee Foundation">
       </a>
+      <div class="sidebar-title"><b>부산 신용보증</b><span>통계 대시보드</span></div>
       <nav aria-label="주요 메뉴">
-        <button class="nav-item active" data-page="overview">보증 종합현황</button>
-        <button class="nav-item" data-page="guarantee">보증현황분석</button>
-        <button class="nav-item" data-page="accident">사고율 분석</button>
+        <span class="nav-label">주요 메뉴</span>
+        <button class="nav-item active" data-page="overview"><i></i>보증 종합현황</button>
+        <button class="nav-item" data-page="guarantee"><i></i>보증현황 분석</button>
+        <button class="nav-item" data-page="accident"><i></i>사고율 분석</button>
       </nav>
+      <div class="sidebar-note"><b>자료 안내</b><p>월말 기준 부산 지역 신용보증 통계입니다. 금액 단위는 백만원입니다.</p></div>
       <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div>
-        <p class="eyebrow">CREDIT GUARANTEE DASHBOARD</p>
-        <h1>부산 신용보증 <strong>통계 대시보드</strong></h1>
+      <div class="hero-copy">
+        <p class="eyebrow">BUSAN CREDIT GUARANTEE FOUNDATION</p>
+        <h1>부산 신용보증 통계 대시보드</h1>
+        <p class="hero-description">부산 지역 소기업·소상공인의 신용보증 현황을 월별 공공데이터로 제공합니다.</p>
         <ul class="hero-summary" aria-label="대시보드 개요">
-          <li><b>조회 기준</b><span>월별</span></li>
-          <li><b>제공 범위</b><span>구·군 · 연령대 · 업종</span></li>
-          <li><b>핵심 지표</b><span>신규보증 · 사고발생 · 순증률 · 보증잔액</span></li>
+          <li><b>제공 범위</b><span>구·군 · 업종 · 연령 · 업력</span></li>
+          <li><b>데이터 주기</b><span>월별</span></li>
         </ul>
       </div>
-      <div class="hero-meta"><span class="live-dot"></span><b id="period-label"></b><small>매월 말 기준 · 샘플 데이터</small></div>
+      <div class="hero-meta"><span class="status-label">기준월</span><b id="period-label"></b><small><span class="live-dot"></span><span id="updated-label">최근 업데이트</span></small></div>
     </section>
 
     <section class="dashboard-shell" aria-label="통계 대시보드">
@@ -48,37 +51,59 @@
 
       <div class="kpi-grid" id="kpi-grid"></div>
 
-      <div class="chart-grid">
+      <section class="story-section composition-section" aria-labelledby="composition-title">
+        <header class="section-band">
+          <div><span>BALANCE COMPOSITION</span><h2 id="composition-title">보증잔액 구성</h2><p id="composition-period">최신 기준월 · 부산시 전체</p></div>
+          <b>보증잔액</b>
+        </header>
+        <div class="composition-grid">
+          <article class="composition-card"><div class="composition-head"><h3>연령대별 비중</h3><span>보증잔액</span></div><div id="balance-age-chart" class="donut-content"></div></article>
+          <article class="composition-card featured"><div class="composition-head"><h3>업종별 비중</h3><span>상위 5개 · 기타</span></div><div id="balance-industry-chart" class="donut-content"></div></article>
+          <article class="composition-card"><div class="composition-head"><h3>업력별 비중</h3><span>보증잔액</span></div><div id="balance-tenure-chart" class="donut-content"></div></article>
+        </div>
+      </section>
+
+      <section class="story-section trend-section" aria-labelledby="trend-title">
+        <header class="section-band">
+          <div><span>FIVE-YEAR TREND</span><h2 id="trend-title">월별 보증 추이</h2><p>2021년 1월부터 최신 기준월까지</p></div>
+          <b>5개년</b>
+        </header>
+        <div class="chart-grid">
         <article class="panel wide">
-          <div class="panel-head"><div><span>월별 추이</span><h3>신규보증 및 사고발생</h3></div><div class="legend"><i class="blue"></i>신규보증 <i class="mint"></i>사고발생</div></div>
+          <div class="panel-head"><div><span>FIVE-YEAR TREND</span><h3>월별 신규보증 실행 및 사고발생 순증</h3><p>2021년 1월부터 최신 기준월까지의 전체 흐름 · 좌측 축 신규보증 / 우측 축 사고순증</p></div><div class="legend"><i class="blue"></i>신규보증 실행 <i class="mint"></i>사고발생 순증</div></div>
           <div id="trend-chart" class="chart" role="img" aria-label="월별 신규보증 및 사고발생 막대 차트"></div>
         </article>
         <article class="panel">
-          <div class="panel-head"><div><span>사고 지표</span><h3>사고발생 순증률</h3></div></div>
+          <div class="panel-head"><div><span>ACCIDENT RATE</span><h3>사고발생 순증률</h3><p>연간환산 기준</p></div></div>
           <div id="rate-chart" class="rate-chart" role="img" aria-label="사고발생 순증률 게이지"></div>
         </article>
-      </div>
+        </div>
+      </section>
 
       <section class="breakdown-section">
-        <div class="section-title"><div><span>DETAIL STATISTICS</span><h2>분류별 보증 현황</h2></div><p>비교 항목 · 4대 핵심 지표</p></div>
+        <div class="section-title"><div><span>DETAIL ANALYSIS</span><h2>분류별 보증 현황</h2><p>구·군, 업종, 연령, 업력 기준으로 핵심 지표를 비교합니다.</p></div><p class="section-unit">단위 · 백만원, %</p></div>
         <div class="tabs" role="tablist">
           <button role="tab" aria-selected="true" data-category="district">구·군별</button>
           <button role="tab" aria-selected="false" data-category="age">연령대별</button>
           <button role="tab" aria-selected="false" data-category="industry">업종별</button>
+          <button role="tab" aria-selected="false" data-category="tenure">업력별</button>
         </div>
         <article class="panel table-panel">
           <div class="table-tools"><div class="metric-switch" id="metric-switch"></div><input id="table-search" type="search" placeholder="항목 검색" aria-label="항목 검색"></div>
           <div class="breakdown-layout">
             <div id="ranking-chart" class="ranking-chart"></div>
-            <div class="table-wrap"><table><thead><tr><th>구분</th><th>신규보증</th><th>사고발생</th><th>순증률</th><th>보증잔액</th></tr></thead><tbody id="data-table"></tbody></table></div>
+            <div class="table-wrap"><table><thead><tr><th>구분</th><th>신규보증 실행</th><th>사고발생 순증</th><th>순증률</th><th>보증잔액</th></tr></thead><tbody id="data-table"></tbody></table></div>
           </div>
         </article>
       </section>
-      <p class="data-note">※ 샘플 화면 · 예시 데이터 · 실제 통계 아님</p>
+      <aside class="notice-panel" aria-label="자료 이용 안내">
+        <div><span>자료 기준일</span><b id="notice-period">2026년 7월 말</b></div>
+        <div><span>표시 단위</span><b>금액 백만원 · 비율 %</b></div>
+        <p><b>유의사항</b> 보증공급은 원본 및 공식 산출 기준 미제공으로 제외했습니다. 화면 수치는 표시 단계에서 반올림될 수 있으며, 집계 원값은 데이터 파일에 유지됩니다.</p>
+      </aside>
     </section>
   </main>
-  <footer><div><b>부산신용보증재단</b><p>월별 보증통계 · 샘플 화면</p></div><p>데이터 문의 051-000-0000 · © Busan Credit Guarantee Foundation</p></footer>
-  <script src="data/dashboard-data.js"></script>
+  <footer><div><b>부산신용보증재단</b><p>부산광역시 부산진구 진연로 15</p></div><p>대표전화 051-860-6600 · © Busan Credit Guarantee Foundation</p></footer>
   <script src="js/app.js"></script>
 </body>
 </html>
