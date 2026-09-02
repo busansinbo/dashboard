@@ -152,7 +152,16 @@
     const data = periodsToSelected(H.monthly, "12");
     const cards = [{ title: "신규보증 실행", key: "new_guarantee_amount", color: "#1769aa" }, { title: "보증잔액", key: "guarantee_balance_amount", color: "#305b88" }, { title: "사고발생 순증", key: "accident_net_amount", color: "#43a8c5" }];
     $("#recent-overview").innerHTML = cards.map((card, i) => `<article class="recent-card"><div><span>${card.title}</span><b>${fmt(data.at(-1)[card.key])}<small> 백만원</small></b></div><div id="recent-chart-${i}" class="mini-chart"></div></article>`).join("");
-    cards.forEach((card, i) => renderLine(`#recent-chart-${i}`, data, row => row[card.key], card.color, false, true));
+    cards.forEach((card, i) => renderLine(
+      `#recent-chart-${i}`,
+      data,
+      row => row[card.key],
+      card.color,
+      false,
+      true,
+      true,
+      card.key === "guarantee_balance_amount",
+    ));
   }
 
   function dimensionRows(name, period = monthly().period) { return H.dimensions[name].filter(row => row.period === period); }
@@ -310,9 +319,9 @@
     renderLine("#selection-chart", values, row => row.value, fields[metric].color, metric === "accidentRate", false, range !== "all");
   }
 
-  function renderLine(selector, data, getter, color, decimal = false, compact = false, showMarkers = true) {
+  function renderLine(selector, data, getter, color, decimal = false, compact = false, showMarkers = true, focusScale = false) {
     if (!data.length) { $(selector).textContent = "표시할 데이터가 없습니다."; return; }
-    const W = compact ? 360 : 960, Ht = compact ? 92 : 250, p = compact ? { l: 4, r: 4, t: 10, b: 16 } : { l: 58, r: 18, t: 18, b: 34 }, values = data.map(getter), min = Math.min(...values, 0), max = Math.max(...values, 1), span = max - min || 1, step = (W - p.l - p.r) / Math.max(data.length - 1, 1), y = value => p.t + (Ht - p.t - p.b) * (1 - (value - min) / span);
+    const W = compact ? 360 : 960, Ht = compact ? 92 : 250, p = compact ? { l: 4, r: 4, t: 10, b: 16 } : { l: 58, r: 18, t: 18, b: 34 }, values = data.map(getter), rawMin = Math.min(...values), rawMax = Math.max(...values), focusedPadding = focusScale ? Math.max((rawMax - rawMin) * .12, Math.abs(rawMax) * .001) : 0, min = focusScale ? rawMin - focusedPadding : Math.min(rawMin, 0), max = focusScale ? rawMax + focusedPadding : Math.max(rawMax, 1), span = max - min || 1, step = (W - p.l - p.r) / Math.max(data.length - 1, 1), y = value => p.t + (Ht - p.t - p.b) * (1 - (value - min) / span);
     const path = values.map((value, i) => `${i ? "L" : "M"}${(p.l + i * step).toFixed(2)},${y(value).toFixed(2)}`).join(" "), labels = compact ? "" : data.map((row, i) => (i === 0 || i === data.length - 1 || data.length <= 12) ? `<text class="axis-label" x="${p.l + i * step}" y="${Ht - 8}" text-anchor="middle">${row.period.slice(2).replace("-", ".")}</text>` : "").join(""), points = compact ? "" : data.map((row, i) => `<g class="selection-point ${showMarkers ? "" : "marker-hidden"}" data-index="${i}" style="color:${color}"><circle cx="${p.l + i * step}" cy="${y(values[i])}" r="3"/></g>`).join("");
     $(selector).innerHTML = `<svg viewBox="0 0 ${W} ${Ht}" preserveAspectRatio="none" aria-hidden="true"><path class="spark-area" d="${path} L${W - p.r},${Ht - p.b} L${p.l},${Ht - p.b} Z" style="fill:${color}12"/><path class="selection-line" d="${path}" style="stroke:${color}"/>${points}${labels}</svg>${compact ? "" : `<div class="line-tooltip" aria-hidden="true"></div>`}`;
     if (!compact) {

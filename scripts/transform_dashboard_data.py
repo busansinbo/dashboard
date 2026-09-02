@@ -427,6 +427,32 @@ def build_outputs(
     return dashboard, history, validation
 
 
+def totals_from_row(row: dict[str, Any]) -> Totals:
+    totals = Totals()
+    for metric in METRICS:
+        totals.values[metric] = Decimal(str(row.get(metric, 0)))
+    return totals
+
+
+def seed_from_history(
+    aggregator: Aggregator,
+    history: dict[str, Any],
+    validation: dict[str, Any],
+) -> None:
+    for row in history.get("monthly", []):
+        aggregator.monthly[row["period"]] = totals_from_row(row)
+    for dimension_name, rows in history.get("dimensions", {}).items():
+        if dimension_name not in aggregator.dimension:
+            continue
+        for row in rows:
+            aggregator.dimension[dimension_name][(row["period"], row["label"])] = totals_from_row(row)
+    for scope, periods in validation.get("regional_scope", {}).items():
+        if scope not in aggregator.scope_monthly:
+            continue
+        for period, row in periods.items():
+            aggregator.scope_monthly[scope][period] = totals_from_row(row)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("archive", type=Path)
@@ -434,6 +460,8 @@ def main() -> None:
     parser.add_argument("--output-dir", type=Path, default=Path("data/generated"))
     parser.add_argument("--normalized-csv", action="store_true")
     parser.add_argument("--publish-dashboard", action="store_true")
+    parser.add_argument("--base-history", type=Path)
+    parser.add_argument("--base-validation", type=Path)
     args = parser.parse_args()
 
     config = json.loads(args.config.read_text(encoding="utf-8"))
@@ -457,12 +485,27 @@ def main() -> None:
     )
     file_reports: list[dict[str, Any]] = []
     pipeline_warnings: list[str] = []
+    base_source_hash = ""
+    if bool(args.base_history) != bool(args.base_validation):
+        raise ValueError("증분 갱신 시 --base-history와 --base-validation을 함께 지정해야 합니다.")
+    if args.base_history and args.base_validation:
+        base_history = json.loads(args.base_history.read_text(encoding="utf-8"))
+        base_validation = json.loads(args.base_validation.read_text(encoding="utf-8"))
+        seed_from_history(aggregator, base_history, base_validation)
+        file_reports.extend(base_validation.get("files", []))
+        pipeline_warnings.extend(base_validation.get("warnings", []))
+        base_source_hash = str(base_history.get("meta", {}).get("sourceSha256", ""))
     with tempfile.TemporaryDirectory(prefix="busansinbo-transform-", ignore_cleanup_errors=True) as temp_dir:
         with zipfile.ZipFile(args.archive, "r") as archive:
             archive.extractall(temp_dir)
         root = Path(temp_dir)
         balance_files, accident_files, select_warnings = choose_source_files(root)
         pipeline_warnings.extend(select_warnings)
+        incoming_periods = {period for _, period in balance_files}
+        incoming_periods.update(period for _, period in accident_files if period)
+        duplicate_periods = sorted(incoming_periods.intersection(aggregator.monthly))
+        if duplicate_periods:
+            raise ValueError(f"기존 이력과 중복되는 기준월: {duplicate_periods}")
         sources = []
         for accident_file, fixed_period in accident_files:
             required = list(config["required_transaction_headers"])
@@ -522,8 +565,11 @@ def main() -> None:
     if before_hash != after_hash:
         raise RuntimeError("원본 ZIP 해시가 작업 전후 달라졌습니다.")
 
+    source_hash = before_hash
+    if base_source_hash:
+        source_hash = hashlib.sha256(f"{base_source_hash}:{before_hash}".encode("utf-8")).hexdigest()
     dashboard, history, validation = build_outputs(
-        aggregator, config, before_hash, file_reports, pipeline_warnings
+        aggregator, config, source_hash, file_reports, pipeline_warnings
     )
     validation["source_unchanged"] = before_hash == after_hash
     for filename, payload in (
