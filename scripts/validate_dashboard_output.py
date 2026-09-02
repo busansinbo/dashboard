@@ -43,7 +43,7 @@ def rate_for_period(period: str, balance: Decimal, monthly_net: list[tuple[str, 
         (value for item_period, value in monthly_net if item_period[:4] == period[:4] and item_period <= period),
         Decimal("0"),
     )
-    annual_days = Decimal(366 if calendar.isleap(year) else 365)
+    annual_days = Decimal(365)
     month_end = date(year, month, calendar.monthrange(year, month)[1])
     elapsed_days = Decimal(month_end.timetuple().tm_yday)
     return ytd_net / balance * annual_days / elapsed_days * Decimal(100)
@@ -166,7 +166,7 @@ def main() -> None:
 
     report["dashboard_value_reconciliation"] = {
         "verified_at": datetime.now(timezone.utc).isoformat(),
-        "source_basis": "dashboard-history.json 집계값; validation-report overall에서 원본 Excel과 건수·합계 일치 확인",
+        "source_basis": "dashboard-history.json 집계값; 구군은 부산 16개 구·군, 월별 전체 및 연령·업종·업력은 지역 제한 없는 원본 전체와 대조",
         "period_coverage": {
             "first": dashboard["monthly"][0]["period"],
             "last": latest,
@@ -178,7 +178,7 @@ def main() -> None:
             "amount_screen_display": "소수점 0자리로 반올림 표시",
             "rate_json_conversion": "공식 계산 결과를 소수점 4자리로 반올림",
             "rate_screen_display": "소수점 1자리로 반올림 표시",
-            "rate_formula": "(연초~기준월 사고순증금액 누계 / 당월말 보증잔액) × (365 또는 윤년 366 / 1월1일~기준월말 경과일수) × 100",
+            "rate_formula": "(연초~기준월 사고순증금액 누계 / 당월말 보증잔액) × (365 / 1월1일~기준월말 누적일수) × 100",
         },
         "excluded_indicators": dashboard["meta"].get("excludedIndicators", []),
         "summary": {

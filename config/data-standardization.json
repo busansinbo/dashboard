@@ -1,7 +1,11 @@
 {
   "target_province": "부산",
+  "target_districts": [
+    "중구", "서구", "동구", "영도구", "부산진구", "동래구", "남구", "북구",
+    "해운대구", "사하구", "금정구", "강서구", "연제구", "수영구", "사상구", "기장군"
+  ],
   "amount_unit": "백만원",
-  "accident_rate_definition": "ytd_accident_net_amount / month_end_guarantee_balance_amount * (days_in_year / elapsed_days) * 100",
+  "accident_rate_definition": "ytd_accident_net_amount / month_end_guarantee_balance_amount * (365 / elapsed_days) * 100",
   "age_group_mapping": {
     "10대 이하": "20대 이하",
     "20대": "20대 이하",

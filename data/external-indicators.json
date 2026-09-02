@@ -1,0 +1,3809 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-01T23:58:44Z",
+  "latest": {
+    "monthlyPeriod": "2026-08",
+    "quarterlyPeriod": "2025-Q3"
+  },
+  "sources": {
+    "smallBusinessBsi": {
+      "provider": "KOSIS",
+      "dataset": "소상공인시장 경기동향조사",
+      "tableId": "DT_S0001N_005",
+      "frequency": "monthly",
+      "unit": "지수",
+      "region": "부산",
+      "url": "https://kosis.kr/serviceInfo/newContrainDataDetail.do?boardIdx=2001057&boardOrgId=142",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    "smeLoanRate": {
+      "provider": "한국은행 ECOS",
+      "dataset": "예금은행 대출금리(신규취급액 기준)",
+      "statCode": "121Y006",
+      "scope": "전국",
+      "frequency": "monthly",
+      "unit": "%",
+      "url": "https://ecos.bok.or.kr/",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    "baseRate": {
+      "provider": "한국은행 ECOS",
+      "dataset": "한국은행 기준금리",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "scope": "전국",
+      "frequency": "daily/month-end monthly snapshot",
+      "unit": "%",
+      "url": "https://ecos.bok.or.kr/",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    "busanSmallBusiness": {
+      "provider": "부산 Big-데이터웨이브",
+      "dataset": "부산광역시소상공인통계",
+      "frequency": "quarterly",
+      "region": "부산 전체",
+      "url": "https://data.busan.go.kr/bdip/board/statRpt.do?bbs=STTMSTR_000000000327GuOXRzILre",
+      "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+      "retrievedAt": "2026-09-01T08:55:37Z",
+      "sourceFiles": [
+        "통계표(2025.3분기 잠정).xlsx",
+        "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+      ],
+      "inspectedFiles": [
+        "상세통계표(2024.4분기 잠정).xlsx",
+        "통계표(2021 확정 및 2022.4분기 잠정).xlsx",
+        "통계표(2025.3분기 잠정).xlsx"
+      ],
+      "formula": {
+        "startupRate": "창업수/활동사업체수*100",
+        "closureRate": "폐업수/활동사업체수*100"
+      }
+    }
+  },
+  "monthly": {
+    "smallBusinessBsi": [
+      {
+        "period": "2021-01",
+        "value": 29.4,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-02",
+        "value": 44.4,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-03",
+        "value": 53.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-04",
+        "value": 43.2,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-05",
+        "value": 52.4,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-06",
+        "value": 49.1,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-07",
+        "value": 27.4,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-08",
+        "value": 29.1,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-09",
+        "value": 51.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-10",
+        "value": 63.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-11",
+        "value": 61.2,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2021-12",
+        "value": 31.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-01",
+        "value": 46.2,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-02",
+        "value": 33.1,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-03",
+        "value": 52.7,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-04",
+        "value": 80.2,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-05",
+        "value": 73.4,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-06",
+        "value": 70.1,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-07",
+        "value": 55.3,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-08",
+        "value": 60.9,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-09",
+        "value": 74.0,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-10",
+        "value": 59.2,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-11",
+        "value": 58.9,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2022-12",
+        "value": 53.3,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-01",
+        "value": 60.7,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-02",
+        "value": 50.0,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-03",
+        "value": 71.2,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-04",
+        "value": 64.7,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-05",
+        "value": 65.3,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-06",
+        "value": 66.2,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-07",
+        "value": 57.6,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-08",
+        "value": 67.9,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-09",
+        "value": 67.9,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-10",
+        "value": 70.9,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-11",
+        "value": 56.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2023-12",
+        "value": 50.9,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-01",
+        "value": 43.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-02",
+        "value": 44.4,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-03",
+        "value": 64.1,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-04",
+        "value": 67.1,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-05",
+        "value": 66.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-06",
+        "value": 57.4,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-07",
+        "value": 53.8,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-08",
+        "value": 58.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-09",
+        "value": 64.1,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-10",
+        "value": 71.2,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-11",
+        "value": 65.0,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2024-12",
+        "value": 56.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-01",
+        "value": 46.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-02",
+        "value": 51.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-03",
+        "value": 65.3,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-04",
+        "value": 61.2,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-05",
+        "value": 70.3,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-06",
+        "value": 67.6,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-07",
+        "value": 63.2,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-08",
+        "value": 69.1,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-09",
+        "value": 81.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-10",
+        "value": 76.8,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-11",
+        "value": 74.7,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2025-12",
+        "value": 67.9,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2026-01",
+        "value": 65.3,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2026-02",
+        "value": 65.6,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2026-03",
+        "value": 57.4,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2026-04",
+        "value": 58.9,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2026-05",
+        "value": 64.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2026-06",
+        "value": 60.7,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      },
+      {
+        "period": "2026-07",
+        "value": 56.5,
+        "unit": "BSI",
+        "source": "KOSIS",
+        "tableId": "DT_S0001N_005",
+        "itemCode": "s0",
+        "region": "부산",
+        "retrievedAt": "2026-09-01T23:58:41Z"
+      }
+    ],
+    "smeLoanRate": [
+      {
+        "period": "2021-01",
+        "value": 2.9,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-02",
+        "value": 2.85,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-03",
+        "value": 2.88,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-04",
+        "value": 2.82,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-05",
+        "value": 2.83,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-06",
+        "value": 2.85,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-07",
+        "value": 2.85,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-08",
+        "value": 2.93,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-09",
+        "value": 3.05,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-10",
+        "value": 3.14,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-11",
+        "value": 3.3,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2021-12",
+        "value": 3.37,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-01",
+        "value": 3.52,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-02",
+        "value": 3.59,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-03",
+        "value": 3.57,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-04",
+        "value": 3.67,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-05",
+        "value": 3.79,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-06",
+        "value": 4.06,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-07",
+        "value": 4.36,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-08",
+        "value": 4.65,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-09",
+        "value": 4.87,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-10",
+        "value": 5.49,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-11",
+        "value": 5.93,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2022-12",
+        "value": 5.76,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-01",
+        "value": 5.67,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-02",
+        "value": 5.45,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-03",
+        "value": 5.28,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-04",
+        "value": 5.14,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-05",
+        "value": 5.23,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-06",
+        "value": 5.37,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-07",
+        "value": 5.32,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-08",
+        "value": 5.24,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-09",
+        "value": 5.34,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-10",
+        "value": 5.35,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-11",
+        "value": 5.42,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2023-12",
+        "value": 5.31,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-01",
+        "value": 5.28,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-02",
+        "value": 4.98,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-03",
+        "value": 4.93,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-04",
+        "value": 4.81,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-05",
+        "value": 4.85,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-06",
+        "value": 4.79,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-07",
+        "value": 4.69,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-08",
+        "value": 4.59,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-09",
+        "value": 4.74,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-10",
+        "value": 4.64,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-11",
+        "value": 4.77,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2024-12",
+        "value": 4.65,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-01",
+        "value": 4.53,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-02",
+        "value": 4.45,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-03",
+        "value": 4.31,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-04",
+        "value": 4.24,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-05",
+        "value": 4.17,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-06",
+        "value": 4.11,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-07",
+        "value": 4.08,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-08",
+        "value": 4.06,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-09",
+        "value": 4.05,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-10",
+        "value": 3.96,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-11",
+        "value": 4.14,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2025-12",
+        "value": 4.24,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2026-01",
+        "value": 4.21,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2026-02",
+        "value": 4.28,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2026-03",
+        "value": 4.17,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2026-04",
+        "value": 4.18,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2026-05",
+        "value": 4.15,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2026-06",
+        "value": 4.38,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      },
+      {
+        "period": "2026-07",
+        "value": 4.22,
+        "unit": "연리%",
+        "source": "한국은행 ECOS",
+        "statCode": "121Y006",
+        "itemCode": "BECBLA0202",
+        "scope": "전국",
+        "retrievedAt": "2026-09-01T23:58:42Z"
+      }
+    ],
+    "baseRateMonthEnd": [
+      {
+        "period": "2021-01",
+        "value": 0.5,
+        "effectiveDate": "2021-01-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-02",
+        "value": 0.5,
+        "effectiveDate": "2021-02-28",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-03",
+        "value": 0.5,
+        "effectiveDate": "2021-03-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-04",
+        "value": 0.5,
+        "effectiveDate": "2021-04-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-05",
+        "value": 0.5,
+        "effectiveDate": "2021-05-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-06",
+        "value": 0.5,
+        "effectiveDate": "2021-06-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-07",
+        "value": 0.5,
+        "effectiveDate": "2021-07-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-08",
+        "value": 0.75,
+        "effectiveDate": "2021-08-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-09",
+        "value": 0.75,
+        "effectiveDate": "2021-09-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-10",
+        "value": 0.75,
+        "effectiveDate": "2021-10-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-11",
+        "value": 1.0,
+        "effectiveDate": "2021-11-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2021-12",
+        "value": 1.0,
+        "effectiveDate": "2021-12-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-01",
+        "value": 1.25,
+        "effectiveDate": "2022-01-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-02",
+        "value": 1.25,
+        "effectiveDate": "2022-02-28",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-03",
+        "value": 1.25,
+        "effectiveDate": "2022-03-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-04",
+        "value": 1.5,
+        "effectiveDate": "2022-04-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-05",
+        "value": 1.75,
+        "effectiveDate": "2022-05-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-06",
+        "value": 1.75,
+        "effectiveDate": "2022-06-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-07",
+        "value": 2.25,
+        "effectiveDate": "2022-07-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-08",
+        "value": 2.5,
+        "effectiveDate": "2022-08-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-09",
+        "value": 2.5,
+        "effectiveDate": "2022-09-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-10",
+        "value": 3.0,
+        "effectiveDate": "2022-10-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-11",
+        "value": 3.25,
+        "effectiveDate": "2022-11-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2022-12",
+        "value": 3.25,
+        "effectiveDate": "2022-12-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-01",
+        "value": 3.5,
+        "effectiveDate": "2023-01-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-02",
+        "value": 3.5,
+        "effectiveDate": "2023-02-28",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-03",
+        "value": 3.5,
+        "effectiveDate": "2023-03-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-04",
+        "value": 3.5,
+        "effectiveDate": "2023-04-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-05",
+        "value": 3.5,
+        "effectiveDate": "2023-05-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-06",
+        "value": 3.5,
+        "effectiveDate": "2023-06-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-07",
+        "value": 3.5,
+        "effectiveDate": "2023-07-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-08",
+        "value": 3.5,
+        "effectiveDate": "2023-08-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-09",
+        "value": 3.5,
+        "effectiveDate": "2023-09-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-10",
+        "value": 3.5,
+        "effectiveDate": "2023-10-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-11",
+        "value": 3.5,
+        "effectiveDate": "2023-11-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2023-12",
+        "value": 3.5,
+        "effectiveDate": "2023-12-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-01",
+        "value": 3.5,
+        "effectiveDate": "2024-01-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-02",
+        "value": 3.5,
+        "effectiveDate": "2024-02-29",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-03",
+        "value": 3.5,
+        "effectiveDate": "2024-03-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-04",
+        "value": 3.5,
+        "effectiveDate": "2024-04-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-05",
+        "value": 3.5,
+        "effectiveDate": "2024-05-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-06",
+        "value": 3.5,
+        "effectiveDate": "2024-06-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-07",
+        "value": 3.5,
+        "effectiveDate": "2024-07-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-08",
+        "value": 3.5,
+        "effectiveDate": "2024-08-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-09",
+        "value": 3.5,
+        "effectiveDate": "2024-09-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-10",
+        "value": 3.25,
+        "effectiveDate": "2024-10-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-11",
+        "value": 3.0,
+        "effectiveDate": "2024-11-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2024-12",
+        "value": 3.0,
+        "effectiveDate": "2024-12-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-01",
+        "value": 3.0,
+        "effectiveDate": "2025-01-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-02",
+        "value": 2.75,
+        "effectiveDate": "2025-02-28",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-03",
+        "value": 2.75,
+        "effectiveDate": "2025-03-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-04",
+        "value": 2.75,
+        "effectiveDate": "2025-04-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-05",
+        "value": 2.5,
+        "effectiveDate": "2025-05-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-06",
+        "value": 2.5,
+        "effectiveDate": "2025-06-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-07",
+        "value": 2.5,
+        "effectiveDate": "2025-07-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-08",
+        "value": 2.5,
+        "effectiveDate": "2025-08-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-09",
+        "value": 2.5,
+        "effectiveDate": "2025-09-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-10",
+        "value": 2.5,
+        "effectiveDate": "2025-10-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-11",
+        "value": 2.5,
+        "effectiveDate": "2025-11-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2025-12",
+        "value": 2.5,
+        "effectiveDate": "2025-12-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2026-01",
+        "value": 2.5,
+        "effectiveDate": "2026-01-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2026-02",
+        "value": 2.5,
+        "effectiveDate": "2026-02-28",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2026-03",
+        "value": 2.5,
+        "effectiveDate": "2026-03-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2026-04",
+        "value": 2.5,
+        "effectiveDate": "2026-04-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2026-05",
+        "value": 2.5,
+        "effectiveDate": "2026-05-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2026-06",
+        "value": 2.5,
+        "effectiveDate": "2026-06-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2026-07",
+        "value": 2.75,
+        "effectiveDate": "2026-07-31",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      },
+      {
+        "period": "2026-08",
+        "value": 3.0,
+        "effectiveDate": "2026-08-30",
+        "unit": "연%",
+        "source": "한국은행 ECOS",
+        "statCode": "722Y001",
+        "itemCode": "0101000",
+        "retrievedAt": "2026-09-01T23:58:44Z"
+      }
+    ]
+  },
+  "quarterly": {
+    "busanSmallBusiness": [
+      {
+        "period": "2020-Q1",
+        "periodEnd": "2020-03",
+        "businessCount": 427117.0,
+        "salesAmount": 63109818.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 5,
+          "salesAmount": 5,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "published",
+          "closureRate": "published"
+        },
+        "activityBusinessCount": 439336.0,
+        "startupCount": 19475.0,
+        "closureCount": 12219.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 439336.0,
+          "startupCount": 19475.0,
+          "closureCount": 12219.0
+        },
+        "publishedRateValidation": {
+          "startupRate": {
+            "published": 4.4328259009050015,
+            "recalculated": 4.4328259009050015,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          },
+          "closureRate": {
+            "published": 2.781242602472823,
+            "recalculated": 2.781242602472823,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          }
+        },
+        "startupRate": 4.4328259009050015,
+        "closureRate": 2.781242602472823,
+        "rateSourceFiles": {
+          "startupRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx",
+          "closureRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        },
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 427117.0,
+          "salesAmount": 63109818.0,
+          "startupRate": 4.4328259009050015,
+          "closureRate": 2.781242602472823
+        }
+      },
+      {
+        "period": "2020-Q2",
+        "periodEnd": "2020-06",
+        "businessCount": 432745.0,
+        "salesAmount": 63719331.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 6,
+          "salesAmount": 6,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "published",
+          "closureRate": "published"
+        },
+        "activityBusinessCount": 444377.0,
+        "startupCount": 17260.0,
+        "closureCount": 11632.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 444377.0,
+          "startupCount": 17260.0,
+          "closureCount": 11632.0
+        },
+        "publishedRateValidation": {
+          "startupRate": {
+            "published": 3.8840894105680537,
+            "recalculated": 3.8840894105680537,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          },
+          "closureRate": {
+            "published": 2.6175972203781925,
+            "recalculated": 2.6175972203781925,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          }
+        },
+        "startupRate": 3.8840894105680537,
+        "closureRate": 2.6175972203781925,
+        "rateSourceFiles": {
+          "startupRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx",
+          "closureRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        },
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 432745.0,
+          "salesAmount": 63719331.0,
+          "startupRate": 3.8840894105680537,
+          "closureRate": 2.6175972203781925
+        }
+      },
+      {
+        "period": "2020-Q3",
+        "periodEnd": "2020-09",
+        "businessCount": 439028.0,
+        "salesAmount": 63768898.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 7,
+          "salesAmount": 7,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "published",
+          "closureRate": "published"
+        },
+        "activityBusinessCount": 449944.0,
+        "startupCount": 17199.0,
+        "closureCount": 10916.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 449944.0,
+          "startupCount": 17199.0,
+          "closureCount": 10916.0
+        },
+        "publishedRateValidation": {
+          "startupRate": {
+            "published": 3.8224756858631297,
+            "recalculated": 3.8224756858631297,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          },
+          "closureRate": {
+            "published": 2.426079689916967,
+            "recalculated": 2.426079689916967,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          }
+        },
+        "startupRate": 3.8224756858631297,
+        "closureRate": 2.426079689916967,
+        "rateSourceFiles": {
+          "startupRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx",
+          "closureRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        },
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 439028.0,
+          "salesAmount": 63768898.0,
+          "startupRate": 3.8224756858631297,
+          "closureRate": 2.426079689916967
+        }
+      },
+      {
+        "period": "2020-Q4",
+        "periodEnd": "2020-12",
+        "businessCount": 441480.0,
+        "salesAmount": 62964930.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 8,
+          "salesAmount": 8,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "published",
+          "closureRate": "published"
+        },
+        "activityBusinessCount": 455227.0,
+        "startupCount": 16199.0,
+        "closureCount": 13747.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 455227.0,
+          "startupCount": 16199.0,
+          "closureCount": 13747.0
+        },
+        "publishedRateValidation": {
+          "startupRate": {
+            "published": 3.5584444683641343,
+            "recalculated": 3.5584444683641343,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          },
+          "closureRate": {
+            "published": 3.019812093746636,
+            "recalculated": 3.019812093746636,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          }
+        },
+        "startupRate": 3.5584444683641343,
+        "closureRate": 3.019812093746636,
+        "rateSourceFiles": {
+          "startupRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx",
+          "closureRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        },
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 441480.0,
+          "salesAmount": 62964930.0,
+          "startupRate": 3.5584444683641343,
+          "closureRate": 3.019812093746636
+        }
+      },
+      {
+        "period": "2021-Q1",
+        "periodEnd": "2021-03",
+        "businessCount": 448228.0,
+        "salesAmount": 68960594.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 9,
+          "salesAmount": 9,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "published",
+          "closureRate": "published"
+        },
+        "activityBusinessCount": 458624.0,
+        "startupCount": 18483.0,
+        "closureCount": 10396.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 458624.0,
+          "startupCount": 18483.0,
+          "closureCount": 10396.0
+        },
+        "publishedRateValidation": {
+          "startupRate": {
+            "published": 4.030098730114429,
+            "recalculated": 4.030098730114429,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          },
+          "closureRate": {
+            "published": 2.2667806307563496,
+            "recalculated": 2.2667806307563496,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          }
+        },
+        "startupRate": 4.030098730114429,
+        "closureRate": 2.2667806307563496,
+        "rateSourceFiles": {
+          "startupRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx",
+          "closureRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        },
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 448228.0,
+          "salesAmount": 68960594.0,
+          "startupRate": 4.030098730114429,
+          "closureRate": 2.2667806307563496
+        }
+      },
+      {
+        "period": "2021-Q2",
+        "periodEnd": "2021-06",
+        "businessCount": 453166.0,
+        "salesAmount": 69866801.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 10,
+          "salesAmount": 10,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "published",
+          "closureRate": "published"
+        },
+        "activityBusinessCount": 466574.0,
+        "startupCount": 18346.0,
+        "closureCount": 13408.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 466574.0,
+          "startupCount": 18346.0,
+          "closureCount": 13408.0
+        },
+        "publishedRateValidation": {
+          "startupRate": {
+            "published": 3.9320665103499124,
+            "recalculated": 3.9320665103499124,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          },
+          "closureRate": {
+            "published": 2.8737134945367724,
+            "recalculated": 2.8737134945367724,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          }
+        },
+        "startupRate": 3.9320665103499124,
+        "closureRate": 2.8737134945367724,
+        "rateSourceFiles": {
+          "startupRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx",
+          "closureRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        },
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 453166.0,
+          "salesAmount": 69866801.0,
+          "startupRate": 3.9320665103499124,
+          "closureRate": 2.8737134945367724
+        }
+      },
+      {
+        "period": "2021-Q3",
+        "periodEnd": "2021-09",
+        "businessCount": 459613.0,
+        "salesAmount": 70181231.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 11,
+          "salesAmount": 11,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "published",
+          "closureRate": "published"
+        },
+        "activityBusinessCount": 469729.0,
+        "startupCount": 16563.0,
+        "closureCount": 10116.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 469729.0,
+          "startupCount": 16563.0,
+          "closureCount": 10116.0
+        },
+        "publishedRateValidation": {
+          "startupRate": {
+            "published": 3.5260756734202063,
+            "recalculated": 3.5260756734202063,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          },
+          "closureRate": {
+            "published": 2.153582171848023,
+            "recalculated": 2.153582171848023,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          }
+        },
+        "startupRate": 3.5260756734202063,
+        "closureRate": 2.153582171848023,
+        "rateSourceFiles": {
+          "startupRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx",
+          "closureRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        },
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 459613.0,
+          "salesAmount": 70181231.0,
+          "startupRate": 3.5260756734202063,
+          "closureRate": 2.153582171848023
+        }
+      },
+      {
+        "period": "2021-Q4",
+        "periodEnd": "2021-12",
+        "businessCount": 461742.0,
+        "salesAmount": 69812193.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 12,
+          "salesAmount": 12,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "published",
+          "closureRate": "published"
+        },
+        "activityBusinessCount": 476418.0,
+        "startupCount": 16805.0,
+        "closureCount": 14676.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 476418.0,
+          "startupCount": 16805.0,
+          "closureCount": 14676.0
+        },
+        "publishedRateValidation": {
+          "startupRate": {
+            "published": 3.5273646251820883,
+            "recalculated": 3.5273646251820883,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          },
+          "closureRate": {
+            "published": 3.0804881427653865,
+            "recalculated": 3.0804881427653865,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          }
+        },
+        "startupRate": 3.5273646251820883,
+        "closureRate": 3.0804881427653865,
+        "rateSourceFiles": {
+          "startupRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx",
+          "closureRate": "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        },
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 461742.0,
+          "salesAmount": 69812193.0,
+          "startupRate": 3.5273646251820883,
+          "closureRate": 3.0804881427653865
+        }
+      },
+      {
+        "period": "2022-Q1",
+        "periodEnd": "2022-03",
+        "businessCount": 464694.0,
+        "salesAmount": 75769218.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 13,
+          "salesAmount": 13,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 474247.0,
+        "startupCount": 17919.0,
+        "closureCount": 9553.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 474247.0,
+          "startupCount": 17919.0,
+          "closureCount": 9553.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 3.778410828112776,
+        "closureRate": 2.014351171435982,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 464694.0,
+          "salesAmount": 75769218.0,
+          "startupRate": 3.778410828112776,
+          "closureRate": 2.014351171435982
+        }
+      },
+      {
+        "period": "2022-Q2",
+        "periodEnd": "2022-06",
+        "businessCount": 470424.0,
+        "salesAmount": 76509457.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 14,
+          "salesAmount": 14,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 481889.0,
+        "startupCount": 17195.0,
+        "closureCount": 11465.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 481889.0,
+          "startupCount": 17195.0,
+          "closureCount": 11465.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 3.568249119610533,
+        "closureRate": 2.379178607521649,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 470424.0,
+          "salesAmount": 76509457.0,
+          "startupRate": 3.568249119610533,
+          "closureRate": 2.379178607521649
+        }
+      },
+      {
+        "period": "2022-Q3",
+        "periodEnd": "2022-09",
+        "businessCount": 474962.0,
+        "salesAmount": 76775617.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 15,
+          "salesAmount": 15,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 487134.0,
+        "startupCount": 16710.0,
+        "closureCount": 12172.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 487134.0,
+          "startupCount": 16710.0,
+          "closureCount": 12172.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 3.4302676470950497,
+        "closureRate": 2.498696457237639,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 474962.0,
+          "salesAmount": 76775617.0,
+          "startupRate": 3.4302676470950497,
+          "closureRate": 2.498696457237639
+        }
+      },
+      {
+        "period": "2022-Q4",
+        "periodEnd": "2022-12",
+        "businessCount": 474267.0,
+        "salesAmount": 76171754.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 16,
+          "salesAmount": 16,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 490501.0,
+        "startupCount": 15539.0,
+        "closureCount": 16234.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 490501.0,
+          "startupCount": 15539.0,
+          "closureCount": 16234.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 3.1679853863702623,
+        "closureRate": 3.3096772483644274,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx",
+          "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 474267.0,
+          "salesAmount": 76171754.0,
+          "startupRate": 3.1679853863702623,
+          "closureRate": 3.3096772483644274
+        }
+      },
+      {
+        "period": "2023-Q1",
+        "periodEnd": "2023-03",
+        "businessCount": 476434.0,
+        "salesAmount": 75986392.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 17,
+          "salesAmount": 17,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 490133.0,
+        "startupCount": 17824.0,
+        "closureCount": 13699.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 490133.0,
+          "startupCount": 17824.0,
+          "closureCount": 13699.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 3.6365639530494787,
+        "closureRate": 2.7949556548936716,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 476434.0,
+          "salesAmount": 75986392.0,
+          "startupRate": 3.6365639530494787,
+          "closureRate": 2.7949556548936716
+        }
+      },
+      {
+        "period": "2023-Q2",
+        "periodEnd": "2023-06",
+        "businessCount": 478799.0,
+        "salesAmount": 76796642.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 18,
+          "salesAmount": 18,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 492680.0,
+        "startupCount": 16246.0,
+        "closureCount": 13881.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 492680.0,
+          "startupCount": 16246.0,
+          "closureCount": 13881.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 3.2974750345051556,
+        "closureRate": 2.8174474303807746,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 478799.0,
+          "salesAmount": 76796642.0,
+          "startupRate": 3.2974750345051556,
+          "closureRate": 2.8174474303807746
+        }
+      },
+      {
+        "period": "2023-Q3",
+        "periodEnd": "2023-09",
+        "businessCount": 482580.0,
+        "salesAmount": 77031053.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 19,
+          "salesAmount": 19,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 494428.0,
+        "startupCount": 15629.0,
+        "closureCount": 11848.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 494428.0,
+          "startupCount": 15629.0,
+          "closureCount": 11848.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 3.1610264790828997,
+        "closureRate": 2.396304416416546,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 482580.0,
+          "salesAmount": 77031053.0,
+          "startupRate": 3.1610264790828997,
+          "closureRate": 2.396304416416546
+        }
+      },
+      {
+        "period": "2023-Q4",
+        "periodEnd": "2023-12",
+        "businessCount": 480722.0,
+        "salesAmount": 76395170.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 20,
+          "salesAmount": 20,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 497458.0,
+        "startupCount": 14878.0,
+        "closureCount": 16736.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 497458.0,
+          "startupCount": 14878.0,
+          "closureCount": 16736.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 2.990805253910883,
+        "closureRate": 3.364304122157046,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 480722.0,
+          "salesAmount": 76395170.0,
+          "startupRate": 2.990805253910883,
+          "closureRate": 3.364304122157046
+        }
+      },
+      {
+        "period": "2024-Q1",
+        "periodEnd": "2024-03",
+        "businessCount": 492045.0,
+        "salesAmount": 76072832.0,
+        "status": "provisional",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 21,
+          "salesAmount": 21,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 505604.0,
+        "startupCount": 18021.0,
+        "closureCount": 13559.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 505604.0,
+          "startupCount": 18021.0,
+          "closureCount": 13559.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 3.5642518650960042,
+        "closureRate": 2.6817430241849354,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 492045.0,
+          "salesAmount": 76072832.0,
+          "startupRate": 3.5642518650960042,
+          "closureRate": 2.6817430241849354
+        }
+      },
+      {
+        "period": "2024-Q2",
+        "periodEnd": "2024-06",
+        "businessCount": 493827.0,
+        "salesAmount": 74991308.0,
+        "status": "provisional",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 22,
+          "salesAmount": 22,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 507683.0,
+        "startupCount": 15638.0,
+        "closureCount": 13856.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 507683.0,
+          "startupCount": 15638.0,
+          "closureCount": 13856.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 3.080268592802989,
+        "closureRate": 2.7292621576850125,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 493827.0,
+          "salesAmount": 74991308.0,
+          "startupRate": 3.080268592802989,
+          "closureRate": 2.7292621576850125
+        }
+      },
+      {
+        "period": "2024-Q3",
+        "periodEnd": "2024-09",
+        "businessCount": 497182.0,
+        "salesAmount": 74102292.0,
+        "status": "provisional",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 23,
+          "salesAmount": 23,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 508711.0,
+        "startupCount": 14884.0,
+        "closureCount": 11529.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 508711.0,
+          "startupCount": 14884.0,
+          "closureCount": 11529.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 2.92582625498564,
+        "closureRate": 2.2663162384929754,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 497182.0,
+          "salesAmount": 74102292.0,
+          "startupRate": 2.92582625498564,
+          "closureRate": 2.2663162384929754
+        }
+      },
+      {
+        "period": "2024-Q4",
+        "periodEnd": "2024-12",
+        "businessCount": 498683.0,
+        "salesAmount": 73190855.0,
+        "status": "provisional",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 24,
+          "salesAmount": 24,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 511075.0,
+        "startupCount": 13893.0,
+        "closureCount": 12392.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 511075.0,
+          "startupCount": 13893.0,
+          "closureCount": 12392.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 2.718387712175317,
+        "closureRate": 2.424693048965416,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 498683.0,
+          "salesAmount": 73190855.0,
+          "startupRate": 2.718387712175317,
+          "closureRate": 2.424693048965416
+        }
+      },
+      {
+        "period": "2025-Q1",
+        "periodEnd": "2025-03",
+        "businessCount": 505591.0,
+        "salesAmount": 80015297.0,
+        "status": "provisional",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 25,
+          "salesAmount": 25,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 518994.0,
+        "startupCount": 15513.0,
+        "closureCount": 13403.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 518994.0,
+          "startupCount": 15513.0,
+          "closureCount": 13403.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 2.9890518965537174,
+        "closureRate": 2.5824961367568795,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 505591.0,
+          "salesAmount": 80015297.0,
+          "startupRate": 2.9890518965537174,
+          "closureRate": 2.5824961367568795
+        }
+      },
+      {
+        "period": "2025-Q2",
+        "periodEnd": "2025-06",
+        "businessCount": 507737.0,
+        "salesAmount": 78918946.0,
+        "status": "provisional",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 26,
+          "salesAmount": 26,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 520267.0,
+        "startupCount": 14676.0,
+        "closureCount": 12530.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 520267.0,
+          "startupCount": 14676.0,
+          "closureCount": 12530.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 2.8208592895570925,
+        "closureRate": 2.4083787747445062,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 507737.0,
+          "salesAmount": 78918946.0,
+          "startupRate": 2.8208592895570925,
+          "closureRate": 2.4083787747445062
+        }
+      },
+      {
+        "period": "2025-Q3",
+        "periodEnd": "2025-09",
+        "businessCount": 512048.0,
+        "salesAmount": 78153033.0,
+        "status": "provisional",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "통계표(2025.3분기 잠정).xlsx",
+        "sourceSheet": "1.연도별 기업규모별 사업체 기본현황",
+        "sourceRows": {
+          "businessCount": 27,
+          "salesAmount": 27,
+          "activityBusinessCount": 6,
+          "startupCount": 6,
+          "closureCount": 6
+        },
+        "fileSha256": "506dc7db5f558c7b6ed45f0a4106f3263b3eb62971dd24034af2b3d3e12ef87d",
+        "retrievedAt": "2026-09-01T08:55:37Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "published",
+          "closureRate": "published"
+        },
+        "activityBusinessCount": 522970.0,
+        "startupCount": 15233.0,
+        "closureCount": 10922.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 522970.0,
+          "startupCount": 15233.0,
+          "closureCount": 10922.0
+        },
+        "publishedRateValidation": {
+          "startupRate": {
+            "published": 2.9127865843164997,
+            "recalculated": 2.9127865843164997,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          },
+          "closureRate": {
+            "published": 2.088456316805935,
+            "recalculated": 2.088456316805935,
+            "difference": 0.0,
+            "displayDecimals": 1,
+            "displayMatched": true
+          }
+        },
+        "startupRate": 2.9127865843164997,
+        "closureRate": 2.088456316805935,
+        "supportingSourceFiles": [
+          "통계표(2025.3분기 잠정).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 512048.0,
+          "salesAmount": 78153033.0,
+          "startupRate": 2.9127865843164997,
+          "closureRate": 2.088456316805935
+        }
+      }
+    ]
+  },
+  "baseRateEvents": [
+    {
+      "effectiveDate": "2021-01-01",
+      "value": 0.5,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2021-08-26",
+      "value": 0.75,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2021-11-25",
+      "value": 1.0,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2022-01-14",
+      "value": 1.25,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2022-04-14",
+      "value": 1.5,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2022-05-26",
+      "value": 1.75,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2022-07-13",
+      "value": 2.25,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2022-08-25",
+      "value": 2.5,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2022-10-12",
+      "value": 3.0,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2022-11-24",
+      "value": 3.25,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2023-01-13",
+      "value": 3.5,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2024-10-11",
+      "value": 3.25,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2024-11-28",
+      "value": 3.0,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2025-02-25",
+      "value": 2.75,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2025-05-29",
+      "value": 2.5,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2026-07-16",
+      "value": 2.75,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    },
+    {
+      "effectiveDate": "2026-08-27",
+      "value": 3.0,
+      "unit": "연%",
+      "source": "한국은행 ECOS",
+      "statCode": "722Y001",
+      "itemCode": "0101000",
+      "retrievedAt": "2026-09-01T23:58:44Z"
+    }
+  ]
+}

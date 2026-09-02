@@ -102,9 +102,21 @@ class Totals:
 
 
 class Aggregator:
-    def __init__(self, age_mapping: dict[str, str] | None = None) -> None:
+    def __init__(
+        self,
+        age_mapping: dict[str, str] | None = None,
+        target_province: str = "부산",
+        target_districts: Iterable[str] | None = None,
+    ) -> None:
         self.age_mapping = age_mapping or {}
+        self.target_province = target_province
+        self.target_districts = set(target_districts or ())
         self.monthly: dict[str, Totals] = defaultdict(Totals)
+        self.scope_monthly: dict[str, dict[str, Totals]] = {
+            "busan_16_districts": defaultdict(Totals),
+            "outside_busan": defaultdict(Totals),
+            "busan_other": defaultdict(Totals),
+        }
         self.dimension: dict[str, dict[tuple[str, str], Totals]] = {
             name: defaultdict(Totals) for name in DIMENSIONS
         }
@@ -112,7 +124,19 @@ class Aggregator:
     def add(self, record: dict[str, Any]) -> None:
         period = record["period"]
         self.monthly[period].add(record)
+        is_busan_district = (
+            record.get("province") == self.target_province
+            and record.get("district") in self.target_districts
+        )
+        if is_busan_district:
+            self.scope_monthly["busan_16_districts"][period].add(record)
+        elif record.get("province") != self.target_province:
+            self.scope_monthly["outside_busan"][period].add(record)
+        else:
+            self.scope_monthly["busan_other"][period].add(record)
         for output_name, field_name in DIMENSIONS.items():
+            if output_name == "district" and not is_busan_district:
+                continue
             label = record.get(field_name) or "미분류"
             if output_name == "age":
                 label = self.age_mapping.get(label, label)
@@ -215,10 +239,10 @@ def annualized_accident_rate(period: str, current: Totals, history: Iterable[tup
         (totals.values["accident_net_amount"] for item_period, totals in history if item_period[:4] == period[:4] and item_period <= period),
         Decimal("0"),
     )
-    days_in_year = Decimal(str(366 if calendar.isleap(year) else 365))
+    annualization_days = Decimal("365")
     month_end = date(year, month, calendar.monthrange(year, month)[1])
     elapsed_days = Decimal(str(month_end.timetuple().tm_yday))
-    return float(ytd_net / balance * (days_in_year / elapsed_days) * 100)
+    return float(ytd_net / balance * (annualization_days / elapsed_days) * 100)
 
 
 def dashboard_row(label: str, totals: Totals, rate: float | None, period: str | None = None) -> dict[str, Any]:
@@ -244,7 +268,7 @@ def build_outputs(
 ) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
     periods = sorted(aggregator.monthly)
     if not periods:
-        raise ValueError("대상 지역의 변환 데이터가 없습니다.")
+        raise ValueError("변환 대상 데이터가 없습니다.")
     latest = periods[-1]
     monthly_history = list(aggregator.monthly.items())
     latest_year, latest_month = map(int, latest.split("-"))
@@ -257,6 +281,11 @@ def build_outputs(
             "unit": config.get("amount_unit") or "원본 금액 단위(확인 필요)",
             "sourceSha256": source_hash,
             "dataType": "actual",
+            "aggregationScope": {
+                "overall": "부산신용보증재단 관리 전체 보증(지역 제한 없음)",
+                "district": "부산광역시 16개 구·군",
+                "ageIndustryTenure": "부산신용보증재단 관리 전체 보증(지역 제한 없음)",
+            },
             "excludedIndicators": [
                 {
                     "name": "보증공급",
@@ -326,6 +355,8 @@ def build_outputs(
         "source_sha256": source_hash,
         "source_unchanged": True,
         "target_province": config["target_province"],
+        "target_districts": config["target_districts"],
+        "aggregation_scope": dashboard["meta"]["aggregationScope"],
         "warnings": warnings_out,
         "files": validation_files,
         "overall": {
@@ -335,6 +366,12 @@ def build_outputs(
             "source_totals": overall_source.as_json(),
             "converted_totals": overall_converted.as_json(),
             "sum_match": overall_source.as_json() == overall_converted.as_json(),
+        },
+        "regional_scope": {
+            scope: {
+                period: totals.as_json() for period, totals in sorted(periods_map.items())
+            }
+            for scope, periods_map in aggregator.scope_monthly.items()
         },
     }
     latest_dashboard_row = next(row for row in dashboard["monthly"] if row["period"] == latest)
@@ -366,7 +403,12 @@ def build_outputs(
     for dimension_name in DIMENSIONS:
         rows = dashboard[dimension_name]
         for source_metric, display_metric in metric_display_map.items():
-            source_value = json_number(latest_totals.values[source_metric])
+            expected_totals = (
+                aggregator.scope_monthly["busan_16_districts"][latest]
+                if dimension_name == "district"
+                else latest_totals
+            )
+            source_value = json_number(expected_totals.values[source_metric])
             display_total = sum(Decimal(str(row[display_metric])) for row in rows)
             dimension_checks.append({
                 "dimension": dimension_name,
@@ -408,7 +450,11 @@ def main() -> None:
         ])
         csv_writer.writeheader()
 
-    aggregator = Aggregator(config.get("age_group_mapping"))
+    aggregator = Aggregator(
+        config.get("age_group_mapping"),
+        config["target_province"],
+        config["target_districts"],
+    )
     file_reports: list[dict[str, Any]] = []
     pipeline_warnings: list[str] = []
     with tempfile.TemporaryDirectory(prefix="busansinbo-transform-", ignore_cleanup_errors=True) as temp_dir:
@@ -429,13 +475,18 @@ def main() -> None:
             source_totals = Totals()
             converted_totals = Totals()
             total_rows = selected_rows = converted_rows = 0
+            regional_rows = {"busan_16_districts": 0, "outside_busan": 0, "busan_other": 0}
             for source_row, record in records_from_workbook(
                 path, dataset_type, required, config["source_headers"], fixed_period
             ):
                 total_rows += 1
-                if record.get("province") != config["target_province"]:
-                    continue
                 selected_rows += 1
+                if record.get("province") != config["target_province"]:
+                    regional_rows["outside_busan"] += 1
+                elif record.get("district") in config["target_districts"]:
+                    regional_rows["busan_16_districts"] += 1
+                else:
+                    regional_rows["busan_other"] += 1
                 source_totals.add(record)
                 aggregator.add(record)
                 converted_totals.add(record)
@@ -454,10 +505,16 @@ def main() -> None:
                 "source_data_rows": total_rows,
                 "selected_rows": selected_rows,
                 "converted_rows": converted_rows,
+                "regional_rows": regional_rows,
                 "source_totals": source_totals.as_json(),
                 "converted_totals": converted_totals.as_json(),
             })
-            print(f"[{file_index}/{len(sources)}] {path.name}: 부산 {selected_rows:,}행", flush=True)
+            print(
+                f"[{file_index}/{len(sources)}] {path.name}: 전체 {selected_rows:,}행 "
+                f"(부산16개구군 {regional_rows['busan_16_districts']:,}, "
+                f"부산외 {regional_rows['outside_busan']:,}, 부산기타 {regional_rows['busan_other']:,})",
+                flush=True,
+            )
 
     if csv_handle:
         csv_handle.close()

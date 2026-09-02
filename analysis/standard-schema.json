@@ -1,6 +1,11 @@
 {
   "description": "5개년 보증·채권 원본의 표준 행 구조",
   "grain": "기준월 × 지역 × 업종 × 대표자연령대 × 업력",
+  "aggregation_scope": {
+    "overall_monthly_age_industry_tenure": "지역 제한 없는 부산신용보증재단 관리 전체 보증",
+    "district": "부산광역시 16개 구·군만 포함",
+    "standardized_rows": "지역 필터 없이 원본 전체 행 보존"
+  },
   "fields": [
     { "name": "dataset_type", "type": "string", "values": ["transaction", "balance"], "description": "원본 자료 계열" },
     { "name": "period", "type": "string", "format": "YYYY-MM", "source": "기준년월 또는 잔액 파일명" },
@@ -17,7 +22,7 @@
     { "name": "accident_net_amount", "type": "number", "source": "보증_사고_순증_금액", "unit": "백만원" },
     { "name": "guarantee_balance_count", "type": "integer", "source": "보증_잔액_건수" },
     { "name": "guarantee_balance_amount", "type": "number", "source": "보증_잔액_금액", "unit": "백만원" },
-    { "name": "accident_rate", "type": "number", "unit": "%", "derived": true, "formula": "{(연간보증사고발생액-연간정상화액)/당월말 보증잔액}×{365(윤년 366)/연간환산일수}×100" }
+    { "name": "accident_rate", "type": "number", "unit": "%", "derived": true, "formula": "{연초~기준월 사고순증금액 누계/당월말 보증잔액}×{365/누적일수}×100" }
   ],
   "unresolved": [
     "향후 월별 사고 파일의 실제 파일명 규칙은 첫 신규 파일 수령 후 재확인 필요"

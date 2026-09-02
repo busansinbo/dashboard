@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.1.0",
+  "output": "data/external-indicators.json",
+  "validationOutput": "external-indicators-validation.json",
+  "updateLog": "external-indicators-update-log.json",
+  "credentials": {
+    "kosis": "KOSIS_API_KEY",
+    "ecos": "ECOS_API_KEY"
+  },
+  "monthly": {
+    "smallBusinessBsi": {
+      "provider": "KOSIS",
+      "endpoint": "https://kosis.kr/openapi/Param/statisticsParameterData.do",
+      "organizationId": "142",
+      "tableId": "DT_S0001N_005",
+      "frequency": "M",
+      "startPeriod": "202101",
+      "itemCode": "s0",
+      "regionCode": "ALL",
+      "regionName": "부산",
+      "itemName": "체감",
+      "acceptedItemNames": ["체감", "체감실적 BSI", "체감실적", "체감경기 BSI"],
+      "unit": "지수",
+      "acceptedUnits": ["지수", "BSI"]
+    },
+    "smeLoanRate": {
+      "provider": "ECOS",
+      "endpoint": "https://ecos.bok.or.kr/api/StatisticSearch",
+      "statCode": "121Y006",
+      "frequency": "M",
+      "startPeriod": "202101",
+      "itemName": "중소기업대출",
+      "acceptedItemNames": ["중소기업대출", "중소기업 대출"],
+      "scope": "전국",
+      "unit": "%",
+      "acceptedUnits": ["%", "연리%"]
+    },
+    "baseRate": {
+      "provider": "ECOS",
+      "endpoint": "https://ecos.bok.or.kr/api/StatisticSearch",
+      "statCode": "722Y001",
+      "frequency": "D",
+      "startPeriod": "20210101",
+      "itemCode": "0101000",
+      "scope": "전국",
+      "unit": "%",
+      "acceptedUnits": ["%", "연%"],
+      "monthlySnapshot": "month_end_effective_rate"
+    }
+  },
+  "quarterly": {
+    "busanSmallBusiness": {
+      "provider": "부산 Big-데이터웨이브",
+      "frequency": "Q",
+      "updateMode": "manual_excel",
+      "interpolation": "none",
+      "sourceDirectory": "source/external/small-business",
+      "requiredRegion": "부산 전체",
+      "units": {
+        "businessCount": "개",
+        "salesAmount": "원본 단위",
+        "startupRate": "%",
+        "closureRate": "%"
+      },
+      "columnAliases": {
+        "period": ["기준분기", "분기", "기준시점", "시점"],
+        "region": ["지역", "지역명", "시도", "행정구역"],
+        "businessCount": ["소상공인 사업체수", "사업체수", "사업체 수"],
+        "salesAmount": ["소상공인 매출액", "매출액", "매출 금액"],
+        "startupRate": ["소상공인 창업률", "창업률"],
+        "closureRate": ["소상공인 폐업률", "폐업률"]
+      }
+    }
+  }
+}

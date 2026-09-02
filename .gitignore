@@ -17,7 +17,17 @@ __pycache__/
 
 # Generated data and local analysis outputs
 data/generated/
+!data/generated/
+data/generated/*
+!data/generated/dashboard-history.json
 .work/
+.env
+.env.*
+.env.local
+!.env.example
 
 # Immutable local source archives (do not publish)
 source/*.zip
+source/**/*.xlsx
+source/**/*.xls
+source/**/*.csv
