@@ -2,10 +2,10 @@
   "meta": {
     "title": "부산 신용보증 통계",
     "year": 2026,
-    "updatedAt": "2026-08-31",
-    "periodLabel": "2026년 8월 기준",
+    "updatedAt": "2026-09-30",
+    "periodLabel": "2026년 9월 기준",
     "unit": "백만원",
-    "sourceSha256": "01305924643719c607e11de8a1e7c30674564cc4b615d1a5699d4347cb98f229",
+    "sourceSha256": "010feacab575bd02fc65600844df1d2ee716382aeac2258604046e7172e2538c",
     "dataType": "actual",
     "aggregationScope": {
       "overall": "부산신용보증재단 관리 전체 보증(지역 제한 없음)",
@@ -631,6 +631,15 @@
       "accident_net_amount": 16873.888141,
       "guarantee_balance_count": 152339,
       "guarantee_balance_amount": 3176516.450536
+    },
+    {
+      "period": "2026-09",
+      "new_guarantee_count": 2303,
+      "new_guarantee_amount": 63252.54,
+      "accident_net_count": 1031,
+      "accident_net_amount": 17652.252157,
+      "guarantee_balance_count": 152562,
+      "guarantee_balance_amount": 3160459.707322
     }
   ],
   "dimensions": {
@@ -11514,6 +11523,166 @@
         "accident_net_amount": 2026.482084,
         "guarantee_balance_count": 15004,
         "guarantee_balance_amount": 296679.585754
+      },
+      {
+        "period": "2026-09",
+        "label": "강서구",
+        "new_guarantee_count": 155,
+        "new_guarantee_amount": 3742.475,
+        "accident_net_count": 80,
+        "accident_net_amount": 1422.953074,
+        "guarantee_balance_count": 12132,
+        "guarantee_balance_amount": 296333.453187
+      },
+      {
+        "period": "2026-09",
+        "label": "금정구",
+        "new_guarantee_count": 142,
+        "new_guarantee_amount": 4340.935,
+        "accident_net_count": 92,
+        "accident_net_amount": 1655.443406,
+        "guarantee_balance_count": 9956,
+        "guarantee_balance_amount": 203102.854707
+      },
+      {
+        "period": "2026-09",
+        "label": "기장군",
+        "new_guarantee_count": 199,
+        "new_guarantee_amount": 5998.165,
+        "accident_net_count": 79,
+        "accident_net_amount": 1396.545045,
+        "guarantee_balance_count": 11036,
+        "guarantee_balance_amount": 262845.39418
+      },
+      {
+        "period": "2026-09",
+        "label": "남구",
+        "new_guarantee_count": 126,
+        "new_guarantee_amount": 3114.97,
+        "accident_net_count": 35,
+        "accident_net_amount": 497.872906,
+        "guarantee_balance_count": 9258,
+        "guarantee_balance_amount": 188241.605277
+      },
+      {
+        "period": "2026-09",
+        "label": "동구",
+        "new_guarantee_count": 89,
+        "new_guarantee_amount": 2719.55,
+        "accident_net_count": 39,
+        "accident_net_amount": 637.131535,
+        "guarantee_balance_count": 5204,
+        "guarantee_balance_amount": 105766.081048
+      },
+      {
+        "period": "2026-09",
+        "label": "동래구",
+        "new_guarantee_count": 156,
+        "new_guarantee_amount": 3935.09,
+        "accident_net_count": 61,
+        "accident_net_amount": 808.212271,
+        "guarantee_balance_count": 11417,
+        "guarantee_balance_amount": 227241.994459
+      },
+      {
+        "period": "2026-09",
+        "label": "부산진구",
+        "new_guarantee_count": 249,
+        "new_guarantee_amount": 7045.82,
+        "accident_net_count": 138,
+        "accident_net_amount": 2458.617153,
+        "guarantee_balance_count": 16559,
+        "guarantee_balance_amount": 336877.323528
+      },
+      {
+        "period": "2026-09",
+        "label": "북구",
+        "new_guarantee_count": 103,
+        "new_guarantee_amount": 2587.9,
+        "accident_net_count": 45,
+        "accident_net_amount": 905.595594,
+        "guarantee_balance_count": 6940,
+        "guarantee_balance_amount": 125919.379501
+      },
+      {
+        "period": "2026-09",
+        "label": "사상구",
+        "new_guarantee_count": 155,
+        "new_guarantee_amount": 4610.3,
+        "accident_net_count": 82,
+        "accident_net_amount": 1349.914216,
+        "guarantee_balance_count": 10877,
+        "guarantee_balance_amount": 227588.251974
+      },
+      {
+        "period": "2026-09",
+        "label": "사하구",
+        "new_guarantee_count": 209,
+        "new_guarantee_amount": 5715.965,
+        "accident_net_count": 51,
+        "accident_net_amount": 1215.547772,
+        "guarantee_balance_count": 10826,
+        "guarantee_balance_amount": 232425.031384
+      },
+      {
+        "period": "2026-09",
+        "label": "서구",
+        "new_guarantee_count": 59,
+        "new_guarantee_amount": 2079.86,
+        "accident_net_count": 39,
+        "accident_net_amount": 534.981642,
+        "guarantee_balance_count": 3847,
+        "guarantee_balance_amount": 81110.118952
+      },
+      {
+        "period": "2026-09",
+        "label": "수영구",
+        "new_guarantee_count": 134,
+        "new_guarantee_amount": 2901.905,
+        "accident_net_count": 39,
+        "accident_net_amount": 690.357643,
+        "guarantee_balance_count": 8750,
+        "guarantee_balance_amount": 175749.407234
+      },
+      {
+        "period": "2026-09",
+        "label": "연제구",
+        "new_guarantee_count": 148,
+        "new_guarantee_amount": 3925.555,
+        "accident_net_count": 67,
+        "accident_net_amount": 1233.889286,
+        "guarantee_balance_count": 9370,
+        "guarantee_balance_amount": 187403.679862
+      },
+      {
+        "period": "2026-09",
+        "label": "영도구",
+        "new_guarantee_count": 48,
+        "new_guarantee_amount": 1257.09,
+        "accident_net_count": 31,
+        "accident_net_amount": 311.26308,
+        "guarantee_balance_count": 3628,
+        "guarantee_balance_amount": 67429.358649
+      },
+      {
+        "period": "2026-09",
+        "label": "중구",
+        "new_guarantee_count": 82,
+        "new_guarantee_amount": 2507.465,
+        "accident_net_count": 28,
+        "accident_net_amount": 581.507799,
+        "guarantee_balance_count": 6212,
+        "guarantee_balance_amount": 122317.817471
+      },
+      {
+        "period": "2026-09",
+        "label": "해운대구",
+        "new_guarantee_count": 246,
+        "new_guarantee_amount": 6732.995,
+        "accident_net_count": 115,
+        "accident_net_amount": 1855.875673,
+        "guarantee_balance_count": 15063,
+        "guarantee_balance_amount": 295459.804158
       }
     ],
     "age": [
@@ -14916,6 +15085,56 @@
         "accident_net_amount": 1889.664124,
         "guarantee_balance_count": 26656,
         "guarantee_balance_amount": 526048.871139
+      },
+      {
+        "period": "2026-09",
+        "label": "20대 이하",
+        "new_guarantee_count": 117,
+        "new_guarantee_amount": 3237.865,
+        "accident_net_count": 86,
+        "accident_net_amount": 1187.660444,
+        "guarantee_balance_count": 7830,
+        "guarantee_balance_amount": 141064.024506
+      },
+      {
+        "period": "2026-09",
+        "label": "30대",
+        "new_guarantee_count": 456,
+        "new_guarantee_amount": 12891.68,
+        "accident_net_count": 209,
+        "accident_net_amount": 3661.931349,
+        "guarantee_balance_count": 29566,
+        "guarantee_balance_amount": 617409.634155
+      },
+      {
+        "period": "2026-09",
+        "label": "40대",
+        "new_guarantee_count": 677,
+        "new_guarantee_amount": 19585.44,
+        "accident_net_count": 345,
+        "accident_net_amount": 6074.853627,
+        "guarantee_balance_count": 45601,
+        "guarantee_balance_amount": 982637.646312
+      },
+      {
+        "period": "2026-09",
+        "label": "50대",
+        "new_guarantee_count": 599,
+        "new_guarantee_amount": 15898.865,
+        "accident_net_count": 228,
+        "accident_net_amount": 4118.599494,
+        "guarantee_balance_count": 42758,
+        "guarantee_balance_amount": 893615.622329
+      },
+      {
+        "period": "2026-09",
+        "label": "60대 이상",
+        "new_guarantee_count": 454,
+        "new_guarantee_amount": 11638.69,
+        "accident_net_count": 163,
+        "accident_net_amount": 2609.207243,
+        "guarantee_balance_count": 26807,
+        "guarantee_balance_amount": 525732.78002
       }
     ],
     "industry": [
@@ -28738,6 +28957,206 @@
         "accident_net_amount": 691.223382,
         "guarantee_balance_count": 11087,
         "guarantee_balance_amount": 178781.415075
+      },
+      {
+        "period": "2026-09",
+        "label": "가구 내 고용활동 및 달리 분류되지 않은 자가소비 생산활동(97~98)",
+        "new_guarantee_count": 0,
+        "new_guarantee_amount": 0,
+        "accident_net_count": 0,
+        "accident_net_amount": 0,
+        "guarantee_balance_count": 2,
+        "guarantee_balance_amount": 15.86
+      },
+      {
+        "period": "2026-09",
+        "label": "건설업(41~42)",
+        "new_guarantee_count": 96,
+        "new_guarantee_amount": 3142.6,
+        "accident_net_count": 53,
+        "accident_net_amount": 1062.896592,
+        "guarantee_balance_count": 7797,
+        "guarantee_balance_amount": 170055.061176
+      },
+      {
+        "period": "2026-09",
+        "label": "공공행정, 국방 및 사회보장 행정(84)",
+        "new_guarantee_count": 1,
+        "new_guarantee_amount": 38,
+        "accident_net_count": 0,
+        "accident_net_amount": 0,
+        "guarantee_balance_count": 7,
+        "guarantee_balance_amount": 137.410003
+      },
+      {
+        "period": "2026-09",
+        "label": "광업(05~08)",
+        "new_guarantee_count": 0,
+        "new_guarantee_amount": 0,
+        "accident_net_count": 0,
+        "accident_net_amount": 0,
+        "guarantee_balance_count": 3,
+        "guarantee_balance_amount": 105.826682
+      },
+      {
+        "period": "2026-09",
+        "label": "교육 서비스업(85)",
+        "new_guarantee_count": 154,
+        "new_guarantee_amount": 3591.535,
+        "accident_net_count": 35,
+        "accident_net_amount": 610.248522,
+        "guarantee_balance_count": 8740,
+        "guarantee_balance_amount": 155220.348212
+      },
+      {
+        "period": "2026-09",
+        "label": "금융 및 보험업(64~66)",
+        "new_guarantee_count": 8,
+        "new_guarantee_amount": 77.995,
+        "accident_net_count": 6,
+        "accident_net_amount": 27.459742,
+        "guarantee_balance_count": 645,
+        "guarantee_balance_amount": 3950.002813
+      },
+      {
+        "period": "2026-09",
+        "label": "농업, 임업 및 어업(01~03)",
+        "new_guarantee_count": 3,
+        "new_guarantee_amount": 33.25,
+        "accident_net_count": 9,
+        "accident_net_amount": 119.086932,
+        "guarantee_balance_count": 352,
+        "guarantee_balance_amount": 6518.248596
+      },
+      {
+        "period": "2026-09",
+        "label": "도매 및 소매업(45~47)",
+        "new_guarantee_count": 607,
+        "new_guarantee_amount": 16635.385,
+        "accident_net_count": 308,
+        "accident_net_amount": 5455.889685,
+        "guarantee_balance_count": 46503,
+        "guarantee_balance_amount": 977712.748688
+      },
+      {
+        "period": "2026-09",
+        "label": "보건업 및 사회복지 서비스업(86~87)",
+        "new_guarantee_count": 4,
+        "new_guarantee_amount": 331,
+        "accident_net_count": 3,
+        "accident_net_amount": 90.079698,
+        "guarantee_balance_count": 545,
+        "guarantee_balance_amount": 21984.96505
+      },
+      {
+        "period": "2026-09",
+        "label": "부동산업(68)",
+        "new_guarantee_count": 57,
+        "new_guarantee_amount": 1189,
+        "accident_net_count": 18,
+        "accident_net_amount": 194.102673,
+        "guarantee_balance_count": 3899,
+        "guarantee_balance_amount": 60863.11659
+      },
+      {
+        "period": "2026-09",
+        "label": "사업시설 관리, 사업 지원 및 임대 서비스업(74~76)",
+        "new_guarantee_count": 46,
+        "new_guarantee_amount": 1048.2,
+        "accident_net_count": 38,
+        "accident_net_amount": 364.526809,
+        "guarantee_balance_count": 3706,
+        "guarantee_balance_amount": 70089.006786
+      },
+      {
+        "period": "2026-09",
+        "label": "수도, 하수 및 폐기물 처리, 원료 재생업(36 ~ 39)",
+        "new_guarantee_count": 3,
+        "new_guarantee_amount": 149,
+        "accident_net_count": 0,
+        "accident_net_amount": 0,
+        "guarantee_balance_count": 137,
+        "guarantee_balance_amount": 3622.709059
+      },
+      {
+        "period": "2026-09",
+        "label": "숙박 및 음식점업(55~56)",
+        "new_guarantee_count": 640,
+        "new_guarantee_amount": 17934.76,
+        "accident_net_count": 283,
+        "accident_net_amount": 5418.25518,
+        "guarantee_balance_count": 36038,
+        "guarantee_balance_amount": 762938.942333
+      },
+      {
+        "period": "2026-09",
+        "label": "예술, 스포츠 및 여가관련 서비스업(90~91)",
+        "new_guarantee_count": 58,
+        "new_guarantee_amount": 1346.48,
+        "accident_net_count": 21,
+        "accident_net_amount": 194.660577,
+        "guarantee_balance_count": 4183,
+        "guarantee_balance_amount": 79784.895986
+      },
+      {
+        "period": "2026-09",
+        "label": "운수 및 창고업(49~52)",
+        "new_guarantee_count": 179,
+        "new_guarantee_amount": 5775.945,
+        "accident_net_count": 76,
+        "accident_net_amount": 1261.213262,
+        "guarantee_balance_count": 12401,
+        "guarantee_balance_amount": 270604.60904
+      },
+      {
+        "period": "2026-09",
+        "label": "전기, 가스, 증기 및 공기조절 공급업(35)",
+        "new_guarantee_count": 0,
+        "new_guarantee_amount": 0,
+        "accident_net_count": 0,
+        "accident_net_amount": 0,
+        "guarantee_balance_count": 19,
+        "guarantee_balance_amount": 471.802683
+      },
+      {
+        "period": "2026-09",
+        "label": "전문, 과학 및 기술 서비스업(70~73)",
+        "new_guarantee_count": 75,
+        "new_guarantee_amount": 2406.95,
+        "accident_net_count": 44,
+        "accident_net_amount": 579.331184,
+        "guarantee_balance_count": 4059,
+        "guarantee_balance_amount": 85649.31941
+      },
+      {
+        "period": "2026-09",
+        "label": "정보통신업(58~63)",
+        "new_guarantee_count": 18,
+        "new_guarantee_amount": 597.5,
+        "accident_net_count": 2,
+        "accident_net_amount": 18.754518,
+        "guarantee_balance_count": 1151,
+        "guarantee_balance_amount": 21777.469429
+      },
+      {
+        "period": "2026-09",
+        "label": "제조업(10~34)",
+        "new_guarantee_count": 171,
+        "new_guarantee_amount": 4821.965,
+        "accident_net_count": 71,
+        "accident_net_amount": 1209.579625,
+        "guarantee_balance_count": 11280,
+        "guarantee_balance_amount": 290868.052513
+      },
+      {
+        "period": "2026-09",
+        "label": "협회 및 단체, 수리 및 기타 개인 서비스업(94~96)",
+        "new_guarantee_count": 183,
+        "new_guarantee_amount": 4132.975,
+        "accident_net_count": 64,
+        "accident_net_amount": 1046.167158,
+        "guarantee_balance_count": 11095,
+        "guarantee_balance_amount": 178089.312273
       }
     ],
     "tenure": [
@@ -38260,6 +38679,146 @@
         "accident_net_amount": 0,
         "guarantee_balance_count": 3,
         "guarantee_balance_amount": 59.13225
+      },
+      {
+        "period": "2026-09",
+        "label": "10년이하",
+        "new_guarantee_count": 299,
+        "new_guarantee_amount": 7717.545,
+        "accident_net_count": 142,
+        "accident_net_amount": 2645.385048,
+        "guarantee_balance_count": 18674,
+        "guarantee_balance_amount": 402905.870956
+      },
+      {
+        "period": "2026-09",
+        "label": "15년이하",
+        "new_guarantee_count": 270,
+        "new_guarantee_amount": 8245,
+        "accident_net_count": 104,
+        "accident_net_amount": 1636.459737,
+        "guarantee_balance_count": 18259,
+        "guarantee_balance_amount": 390102.588682
+      },
+      {
+        "period": "2026-09",
+        "label": "1년이하",
+        "new_guarantee_count": 199,
+        "new_guarantee_amount": 4905.375,
+        "accident_net_count": 109,
+        "accident_net_amount": 1686.134059,
+        "guarantee_balance_count": 11956,
+        "guarantee_balance_amount": 219950.671275
+      },
+      {
+        "period": "2026-09",
+        "label": "20년이하",
+        "new_guarantee_count": 137,
+        "new_guarantee_amount": 4207.95,
+        "accident_net_count": 21,
+        "accident_net_amount": 405.599467,
+        "guarantee_balance_count": 9220,
+        "guarantee_balance_amount": 198596.36933
+      },
+      {
+        "period": "2026-09",
+        "label": "20년초과",
+        "new_guarantee_count": 152,
+        "new_guarantee_amount": 4181.5,
+        "accident_net_count": 30,
+        "accident_net_amount": 745.687709,
+        "guarantee_balance_count": 10290,
+        "guarantee_balance_amount": 231005.473022
+      },
+      {
+        "period": "2026-09",
+        "label": "2년이하",
+        "new_guarantee_count": 313,
+        "new_guarantee_amount": 8870.355,
+        "accident_net_count": 172,
+        "accident_net_amount": 3030.659228,
+        "guarantee_balance_count": 19044,
+        "guarantee_balance_amount": 390909.827996
+      },
+      {
+        "period": "2026-09",
+        "label": "3개월이하",
+        "new_guarantee_count": 19,
+        "new_guarantee_amount": 420.75,
+        "accident_net_count": 23,
+        "accident_net_amount": 390.612638,
+        "guarantee_balance_count": 2904,
+        "guarantee_balance_amount": 47829.372158
+      },
+      {
+        "period": "2026-09",
+        "label": "3년이하",
+        "new_guarantee_count": 228,
+        "new_guarantee_amount": 5942.51,
+        "accident_net_count": 112,
+        "accident_net_amount": 1933.002154,
+        "guarantee_balance_count": 14967,
+        "guarantee_balance_amount": 307759.370283
+      },
+      {
+        "period": "2026-09",
+        "label": "4년이하",
+        "new_guarantee_count": 173,
+        "new_guarantee_amount": 5161.69,
+        "accident_net_count": 89,
+        "accident_net_amount": 1568.096057,
+        "guarantee_balance_count": 12086,
+        "guarantee_balance_amount": 251238.077186
+      },
+      {
+        "period": "2026-09",
+        "label": "5년이하",
+        "new_guarantee_count": 152,
+        "new_guarantee_amount": 4179.16,
+        "accident_net_count": 72,
+        "accident_net_amount": 1234.234456,
+        "guarantee_balance_count": 10780,
+        "guarantee_balance_amount": 228891.242067
+      },
+      {
+        "period": "2026-09",
+        "label": "6개월이하",
+        "new_guarantee_count": 112,
+        "new_guarantee_amount": 2849,
+        "accident_net_count": 51,
+        "accident_net_amount": 884.982285,
+        "guarantee_balance_count": 5880,
+        "guarantee_balance_amount": 106761.567522
+      },
+      {
+        "period": "2026-09",
+        "label": "6년이하",
+        "new_guarantee_count": 133,
+        "new_guarantee_amount": 3366.16,
+        "accident_net_count": 63,
+        "accident_net_amount": 821.05604,
+        "guarantee_balance_count": 9926,
+        "guarantee_balance_amount": 203968.758328
+      },
+      {
+        "period": "2026-09",
+        "label": "7년이하",
+        "new_guarantee_count": 116,
+        "new_guarantee_amount": 3205.545,
+        "accident_net_count": 43,
+        "accident_net_amount": 670.343279,
+        "guarantee_balance_count": 8574,
+        "guarantee_balance_amount": 180512.251773
+      },
+      {
+        "period": "2026-09",
+        "label": "값없음",
+        "new_guarantee_count": 0,
+        "new_guarantee_amount": 0,
+        "accident_net_count": 0,
+        "accident_net_amount": 0,
+        "guarantee_balance_count": 2,
+        "guarantee_balance_amount": 28.266744
       }
     ]
   }

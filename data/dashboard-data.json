@@ -2,10 +2,10 @@
   "meta": {
     "title": "부산 신용보증 통계",
     "year": 2026,
-    "updatedAt": "2026-08-31",
-    "periodLabel": "2026년 8월 기준",
+    "updatedAt": "2026-09-30",
+    "periodLabel": "2026년 9월 기준",
     "unit": "백만원",
-    "sourceSha256": "01305924643719c607e11de8a1e7c30674564cc4b615d1a5699d4347cb98f229",
+    "sourceSha256": "010feacab575bd02fc65600844df1d2ee716382aeac2258604046e7172e2538c",
     "dataType": "actual",
     "aggregationScope": {
       "overall": "부산신용보증재단 관리 전체 보증(지역 제한 없음)",
@@ -563,399 +563,407 @@
       "accidentRate": 6.0935,
       "balance": 3176516.450536,
       "period": "2026-08"
+    },
+    {
+      "label": "9월",
+      "newGuarantee": 63252.54,
+      "accidents": 17652.252157,
+      "accidentRate": 6.1982,
+      "balance": 3160459.707322,
+      "period": "2026-09"
     }
   ],
   "district": [
     {
       "label": "부산진구",
-      "newGuarantee": 7500.52,
-      "accidents": 2225.628603,
-      "accidentRate": 7.0307,
-      "balance": 339145.832288
+      "newGuarantee": 7045.82,
+      "accidents": 2458.617153,
+      "accidentRate": 7.276,
+      "balance": 336877.323528
     },
     {
       "label": "해운대구",
-      "newGuarantee": 6652.835,
-      "accidents": 2026.482084,
-      "accidentRate": 5.8475,
-      "balance": 296679.585754
-    },
-    {
-      "label": "사하구",
-      "newGuarantee": 5836.45,
-      "accidents": 1481.828993,
-      "accidentRate": 6.5339,
-      "balance": 231524.571913
-    },
-    {
-      "label": "강서구",
-      "newGuarantee": 5295.12,
-      "accidents": 1093.810588,
-      "accidentRate": 5.0113,
-      "balance": 299351.479817
-    },
-    {
-      "label": "동래구",
-      "newGuarantee": 4715.25,
-      "accidents": 1268.514059,
-      "accidentRate": 6.5271,
-      "balance": 228516.778993
+      "newGuarantee": 6732.995,
+      "accidents": 1855.875673,
+      "accidentRate": 6.0662,
+      "balance": 295459.804158
     },
     {
       "label": "기장군",
-      "newGuarantee": 4689.675,
-      "accidents": 1165.241232,
-      "accidentRate": 4.7471,
-      "balance": 261961.970604
+      "newGuarantee": 5998.165,
+      "accidents": 1396.545045,
+      "accidentRate": 4.9216,
+      "balance": 262845.39418
+    },
+    {
+      "label": "사하구",
+      "newGuarantee": 5715.965,
+      "accidents": 1215.547772,
+      "accidentRate": 6.4926,
+      "balance": 232425.031384
     },
     {
       "label": "사상구",
-      "newGuarantee": 4231.995,
-      "accidents": 1032.781063,
-      "accidentRate": 5.1511,
-      "balance": 229130.317803
-    },
-    {
-      "label": "남구",
-      "newGuarantee": 4217.71,
-      "accidents": 1214.545923,
-      "accidentRate": 5.9995,
-      "balance": 189904.765545
+      "newGuarantee": 4610.3,
+      "accidents": 1349.914216,
+      "accidentRate": 5.4091,
+      "balance": 227588.251974
     },
     {
       "label": "금정구",
-      "newGuarantee": 4112.275,
-      "accidents": 521.620526,
-      "accidentRate": 5.9741,
-      "balance": 203540.936729
+      "newGuarantee": 4340.935,
+      "accidents": 1655.443406,
+      "accidentRate": 6.4189,
+      "balance": 203102.854707
     },
     {
-      "label": "수영구",
-      "newGuarantee": 3369.18,
-      "accidents": 1131.361221,
-      "accidentRate": 6.0958,
-      "balance": 177992.627547
+      "label": "동래구",
+      "newGuarantee": 3935.09,
+      "accidents": 808.212271,
+      "accidentRate": 6.318,
+      "balance": 227241.994459
     },
     {
       "label": "연제구",
-      "newGuarantee": 3346.425,
-      "accidents": 1043.268662,
-      "accidentRate": 6.6927,
-      "balance": 188152.13774
+      "newGuarantee": 3925.555,
+      "accidents": 1233.889286,
+      "accidentRate": 6.8614,
+      "balance": 187403.679862
     },
     {
-      "label": "북구",
-      "newGuarantee": 2493.305,
-      "accidents": 898.830883,
-      "accidentRate": 6.7298,
-      "balance": 126912.367829
+      "label": "강서구",
+      "newGuarantee": 3742.475,
+      "accidents": 1422.953074,
+      "accidentRate": 5.1481,
+      "balance": 296333.453187
+    },
+    {
+      "label": "남구",
+      "newGuarantee": 3114.97,
+      "accidents": 497.872906,
+      "accidentRate": 5.741,
+      "balance": 188241.605277
+    },
+    {
+      "label": "수영구",
+      "newGuarantee": 2901.905,
+      "accidents": 690.357643,
+      "accidentRate": 6.0204,
+      "balance": 175749.407234
     },
     {
       "label": "동구",
-      "newGuarantee": 2208,
-      "accidents": 361.178708,
-      "accidentRate": 5.651,
-      "balance": 105334.169073
+      "newGuarantee": 2719.55,
+      "accidents": 637.131535,
+      "accidentRate": 5.8149,
+      "balance": 105766.081048
+    },
+    {
+      "label": "북구",
+      "newGuarantee": 2587.9,
+      "accidents": 905.595594,
+      "accidentRate": 6.999,
+      "balance": 125919.379501
     },
     {
       "label": "중구",
-      "newGuarantee": 2179.65,
-      "accidents": 563.146943,
-      "accidentRate": 6.5206,
-      "balance": 123281.505732
-    },
-    {
-      "label": "영도구",
-      "newGuarantee": 1202.66,
-      "accidents": 271.693306,
-      "accidentRate": 6.0375,
-      "balance": 67980.76491
+      "newGuarantee": 2507.465,
+      "accidents": 581.507799,
+      "accidentRate": 6.4854,
+      "balance": 122317.817471
     },
     {
       "label": "서구",
-      "newGuarantee": 1183.83,
-      "accidents": 440.352239,
-      "accidentRate": 8.062,
-      "balance": 81879.697493
+      "newGuarantee": 2079.86,
+      "accidents": 534.981642,
+      "accidentRate": 8.126,
+      "balance": 81110.118952
+    },
+    {
+      "label": "영도구",
+      "newGuarantee": 1257.09,
+      "accidents": 311.26308,
+      "accidentRate": 6.0352,
+      "balance": 67429.358649
     }
   ],
   "age": [
     {
       "label": "20대 이하",
-      "newGuarantee": 3444.65,
-      "accidents": 830.920272,
-      "accidentRate": 9.1169,
-      "balance": 142570.124625
+      "newGuarantee": 3237.865,
+      "accidents": 1187.660444,
+      "accidentRate": 9.3273,
+      "balance": 141064.024506
     },
     {
       "label": "30대",
-      "newGuarantee": 13274.765,
-      "accidents": 4078.923604,
-      "accidentRate": 7.4453,
-      "balance": 622117.618942
+      "newGuarantee": 12891.68,
+      "accidents": 3661.931349,
+      "accidentRate": 7.4707,
+      "balance": 617409.634155
     },
     {
       "label": "40대",
-      "newGuarantee": 17818.15,
-      "accidents": 6149.76383,
-      "accidentRate": 6.4071,
-      "balance": 986819.666993
+      "newGuarantee": 19585.44,
+      "accidents": 6074.853627,
+      "accidentRate": 6.5538,
+      "balance": 982637.646312
     },
     {
       "label": "50대",
-      "newGuarantee": 16677.93,
-      "accidents": 3924.616311,
-      "accidentRate": 5.2631,
-      "balance": 898960.168837
+      "newGuarantee": 15898.865,
+      "accidents": 4118.599494,
+      "accidentRate": 5.3289,
+      "balance": 893615.622329
     },
     {
       "label": "60대 이상",
-      "newGuarantee": 12074.58,
-      "accidents": 1889.664124,
-      "accidentRate": 4.5062,
-      "balance": 526048.871139
+      "newGuarantee": 11638.69,
+      "accidents": 2609.207243,
+      "accidentRate": 4.6769,
+      "balance": 525732.78002
     }
   ],
   "industry": [
     {
-      "label": "도매 및 소매업(45~47)",
-      "newGuarantee": 19693.58,
-      "accidents": 4200.687791,
-      "accidentRate": 5.6667,
-      "balance": 986007.679573
+      "label": "숙박 및 음식점업(55~56)",
+      "newGuarantee": 17934.76,
+      "accidents": 5418.25518,
+      "accidentRate": 7.7238,
+      "balance": 762938.942333
     },
     {
-      "label": "숙박 및 음식점업(55~56)",
-      "newGuarantee": 14955.785,
-      "accidents": 4656.673826,
-      "accidentRate": 7.5837,
-      "balance": 765648.232328
+      "label": "도매 및 소매업(45~47)",
+      "newGuarantee": 16635.385,
+      "accidents": 5455.889685,
+      "accidentRate": 5.8329,
+      "balance": 977712.748688
     },
     {
       "label": "운수 및 창고업(49~52)",
-      "newGuarantee": 5602.45,
-      "accidents": 1527.412462,
-      "accidentRate": 6.1635,
-      "balance": 271559.142681
+      "newGuarantee": 5775.945,
+      "accidents": 1261.213262,
+      "accidentRate": 6.1287,
+      "balance": 270604.60904
     },
     {
       "label": "제조업(10~34)",
-      "newGuarantee": 5128.3,
-      "accidents": 1456.150855,
-      "accidentRate": 5.0213,
-      "balance": 291399.101936
+      "newGuarantee": 4821.965,
+      "accidents": 1209.579625,
+      "accidentRate": 5.0337,
+      "balance": 290868.052513
     },
     {
       "label": "협회 및 단체, 수리 및 기타 개인 서비스업(94~96)",
-      "newGuarantee": 4268.36,
-      "accidents": 691.223382,
-      "accidentRate": 6.1242,
-      "balance": 178781.415075
-    },
-    {
-      "label": "건설업(41~42)",
-      "newGuarantee": 3881.31,
-      "accidents": 1397.739824,
-      "accidentRate": 6.7254,
-      "balance": 170798.877145
+      "newGuarantee": 4132.975,
+      "accidents": 1046.167158,
+      "accidentRate": 6.2578,
+      "balance": 178089.312273
     },
     {
       "label": "교육 서비스업(85)",
-      "newGuarantee": 2933.865,
-      "accidents": 868.7922,
-      "accidentRate": 4.4304,
-      "balance": 154984.559525
+      "newGuarantee": 3591.535,
+      "accidents": 610.248522,
+      "accidentRate": 4.4632,
+      "balance": 155220.348212
+    },
+    {
+      "label": "건설업(41~42)",
+      "newGuarantee": 3142.6,
+      "accidents": 1062.896592,
+      "accidentRate": 6.8482,
+      "balance": 170055.061176
     },
     {
       "label": "전문, 과학 및 기술 서비스업(70~73)",
-      "newGuarantee": 1970.4,
-      "accidents": 633.229346,
-      "accidentRate": 6.4527,
-      "balance": 85399.122368
+      "newGuarantee": 2406.95,
+      "accidents": 579.331184,
+      "accidentRate": 6.6312,
+      "balance": 85649.31941
     },
     {
       "label": "예술, 스포츠 및 여가관련 서비스업(90~91)",
-      "newGuarantee": 1734.9,
-      "accidents": 350.036406,
-      "accidentRate": 4.394,
-      "balance": 81100.896818
-    },
-    {
-      "label": "사업시설 관리, 사업 지원 및 임대 서비스업(74~76)",
-      "newGuarantee": 1262.75,
-      "accidents": 361.652897,
-      "accidentRate": 5.6004,
-      "balance": 70122.558511
+      "newGuarantee": 1346.48,
+      "accidents": 194.660577,
+      "accidentRate": 4.3018,
+      "balance": 79784.895986
     },
     {
       "label": "부동산업(68)",
-      "newGuarantee": 599.575,
-      "accidents": 375.883772,
-      "accidentRate": 5.0972,
-      "balance": 61240.98059
+      "newGuarantee": 1189,
+      "accidents": 194.102673,
+      "accidentRate": 4.9916,
+      "balance": 60863.11659
     },
     {
-      "label": "보건업 및 사회복지 서비스업(86~87)",
-      "newGuarantee": 474.05,
-      "accidents": 57.916693,
-      "accidentRate": 1.4316,
-      "balance": 22555.532242
+      "label": "사업시설 관리, 사업 지원 및 임대 서비스업(74~76)",
+      "newGuarantee": 1048.2,
+      "accidents": 364.526809,
+      "accidentRate": 5.6827,
+      "balance": 70089.006786
     },
     {
       "label": "정보통신업(58~63)",
-      "newGuarantee": 284.7,
-      "accidents": 221.947132,
-      "accidentRate": 7.2628,
-      "balance": 22081.340477
+      "newGuarantee": 597.5,
+      "accidents": 18.754518,
+      "accidentRate": 6.67,
+      "balance": 21777.469429
     },
     {
-      "label": "농업, 임업 및 어업(01~03)",
-      "newGuarantee": 209.75,
-      "accidents": -35.896038,
-      "accidentRate": 4.8621,
-      "balance": 6526.366053
-    },
-    {
-      "label": "금융 및 보험업(64~66)",
-      "newGuarantee": 195.3,
-      "accidents": 40.517593,
-      "accidentRate": 8.0658,
-      "balance": 4027.348759
-    },
-    {
-      "label": "광업(05~08)",
-      "newGuarantee": 95,
-      "accidents": 0,
-      "accidentRate": 0.0,
-      "balance": 106.653348
+      "label": "보건업 및 사회복지 서비스업(86~87)",
+      "newGuarantee": 331,
+      "accidents": 90.079698,
+      "accidentRate": 1.8552,
+      "balance": 21984.96505
     },
     {
       "label": "수도, 하수 및 폐기물 처리, 원료 재생업(36 ~ 39)",
-      "newGuarantee": 0,
-      "accidents": 69.92,
-      "accidentRate": 3.7826,
-      "balance": 3550.705746
+      "newGuarantee": 149,
+      "accidents": 0,
+      "accidentRate": 3.3,
+      "balance": 3622.709059
+    },
+    {
+      "label": "금융 및 보험업(64~66)",
+      "newGuarantee": 77.995,
+      "accidents": 27.459742,
+      "accidentRate": 8.2495,
+      "balance": 3950.002813
+    },
+    {
+      "label": "공공행정, 국방 및 사회보장 행정(84)",
+      "newGuarantee": 38,
+      "accidents": 0,
+      "accidentRate": 0.0,
+      "balance": 137.410003
+    },
+    {
+      "label": "농업, 임업 및 어업(01~03)",
+      "newGuarantee": 33.25,
+      "accidents": 119.086932,
+      "accidentRate": 6.7759,
+      "balance": 6518.248596
     },
     {
       "label": "전기, 가스, 증기 및 공기조절 공급업(35)",
       "newGuarantee": 0,
       "accidents": 0,
-      "accidentRate": 24.2921,
-      "balance": 509.147359
+      "accidentRate": 23.3342,
+      "balance": 471.802683
     },
     {
       "label": "가구 내 고용활동 및 달리 분류되지 않은 자가소비 생산활동(97~98)",
       "newGuarantee": 0,
       "accidents": 0,
       "accidentRate": 0.0,
-      "balance": 16.12
+      "balance": 15.86
     },
     {
-      "label": "공공행정, 국방 및 사회보장 행정(84)",
+      "label": "광업(05~08)",
       "newGuarantee": 0,
       "accidents": 0,
       "accidentRate": 0.0,
-      "balance": 100.670002
+      "balance": 105.826682
     }
   ],
   "tenure": [
     {
       "label": "2년이하",
-      "newGuarantee": 8445.77,
-      "accidents": 2606.796901,
-      "accidentRate": 8.0654,
-      "balance": 393852.690708
-    },
-    {
-      "label": "10년이하",
-      "newGuarantee": 7635.525,
-      "accidents": 1896.175257,
-      "accidentRate": 5.2368,
-      "balance": 404456.088739
+      "newGuarantee": 8870.355,
+      "accidents": 3030.659228,
+      "accidentRate": 8.2697,
+      "balance": 390909.827996
     },
     {
       "label": "15년이하",
-      "newGuarantee": 7024.24,
-      "accidents": 1518.223265,
-      "accidentRate": 4.6802,
-      "balance": 389152.544644
+      "newGuarantee": 8245,
+      "accidents": 1636.459737,
+      "accidentRate": 4.7166,
+      "balance": 390102.588682
     },
     {
-      "label": "1년이하",
-      "newGuarantee": 6648.075,
-      "accidents": 1408.439911,
-      "accidentRate": 7.2646,
-      "balance": 221938.828077
+      "label": "10년이하",
+      "newGuarantee": 7717.545,
+      "accidents": 2645.385048,
+      "accidentRate": 5.5571,
+      "balance": 402905.870956
     },
     {
       "label": "3년이하",
-      "newGuarantee": 5589.13,
-      "accidents": 1515.936549,
-      "accidentRate": 7.0662,
-      "balance": 310984.287312
+      "newGuarantee": 5942.51,
+      "accidents": 1933.002154,
+      "accidentRate": 7.1953,
+      "balance": 307759.370283
     },
     {
       "label": "4년이하",
-      "newGuarantee": 5122.575,
-      "accidents": 1692.600631,
-      "accidentRate": 7.0608,
-      "balance": 252417.724727
+      "newGuarantee": 5161.69,
+      "accidents": 1568.096057,
+      "accidentRate": 7.1489,
+      "balance": 251238.077186
     },
     {
-      "label": "20년초과",
-      "newGuarantee": 4803.3,
-      "accidents": 456.703922,
-      "accidentRate": 2.4014,
-      "balance": 231671.918682
-    },
-    {
-      "label": "5년이하",
-      "newGuarantee": 4340.465,
-      "accidents": 1611.653811,
-      "accidentRate": 7.1071,
-      "balance": 230163.35166
-    },
-    {
-      "label": "6년이하",
-      "newGuarantee": 3903.1,
-      "accidents": 1351.917886,
-      "accidentRate": 6.5449,
-      "balance": 205134.54765
+      "label": "1년이하",
+      "newGuarantee": 4905.375,
+      "accidents": 1686.134059,
+      "accidentRate": 7.5496,
+      "balance": 219950.671275
     },
     {
       "label": "20년이하",
-      "newGuarantee": 3661.46,
-      "accidents": 936.21501,
-      "accidentRate": 3.5937,
-      "balance": 198696.989023
+      "newGuarantee": 4207.95,
+      "accidents": 405.599467,
+      "accidentRate": 3.4735,
+      "balance": 198596.36933
     },
     {
-      "label": "6개월이하",
-      "newGuarantee": 3064.225,
-      "accidents": 756.100669,
-      "accidentRate": 9.1784,
-      "balance": 107457.887509
+      "label": "20년초과",
+      "newGuarantee": 4181.5,
+      "accidents": 745.687709,
+      "accidentRate": 2.5753,
+      "balance": 231005.473022
+    },
+    {
+      "label": "5년이하",
+      "newGuarantee": 4179.16,
+      "accidents": 1234.234456,
+      "accidentRate": 7.0822,
+      "balance": 228891.242067
+    },
+    {
+      "label": "6년이하",
+      "newGuarantee": 3366.16,
+      "accidents": 821.05604,
+      "accidentRate": 6.3972,
+      "balance": 203968.758328
     },
     {
       "label": "7년이하",
-      "newGuarantee": 2695.96,
-      "accidents": 886.895564,
-      "accidentRate": 5.5408,
-      "balance": 181268.599655
+      "newGuarantee": 3205.545,
+      "accidents": 670.343279,
+      "accidentRate": 5.4491,
+      "balance": 180512.251773
+    },
+    {
+      "label": "6개월이하",
+      "newGuarantee": 2849,
+      "accidents": 884.982285,
+      "accidentRate": 9.3313,
+      "balance": 106761.567522
     },
     {
       "label": "3개월이하",
-      "newGuarantee": 356.25,
-      "accidents": 236.228765,
-      "accidentRate": 8.2041,
-      "balance": 49261.8599
+      "newGuarantee": 420.75,
+      "accidents": 390.612638,
+      "accidentRate": 8.6132,
+      "balance": 47829.372158
     },
     {
       "label": "값없음",
       "newGuarantee": 0,
       "accidents": 0,
-      "accidentRate": 76.205,
-      "balance": 59.13225
+      "accidentRate": 141.8978,
+      "balance": 28.266744
     }
   ]
 }

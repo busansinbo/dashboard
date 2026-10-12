@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-09-01T23:58:44Z",
+  "generatedAt": "2026-10-06T02:50:47Z",
   "latest": {
     "monthlyPeriod": "2026-08",
-    "quarterlyPeriod": "2025-Q3"
+    "quarterlyPeriod": "2025-Q4"
   },
   "sources": {
     "smallBusinessBsi": {
@@ -43,13 +43,15 @@
       "frequency": "quarterly",
       "region": "부산 전체",
       "url": "https://data.busan.go.kr/bdip/board/statRpt.do?bbs=STTMSTR_000000000327GuOXRzILre",
-      "sourceFile": "통계표(2025.3분기 잠정).xlsx",
-      "retrievedAt": "2026-09-01T08:55:37Z",
+      "sourceFile": "상세결과표(2025년 4분기).xlsx",
+      "retrievedAt": "2026-10-06T02:50:47Z",
       "sourceFiles": [
+        "상세결과표(2025년 4분기).xlsx",
         "통계표(2025.3분기 잠정).xlsx",
         "통계표(2021 확정 및 2022.4분기 잠정).xlsx"
       ],
       "inspectedFiles": [
+        "상세결과표(2025년 4분기).xlsx",
         "상세통계표(2024.4분기 잠정).xlsx",
         "통계표(2021 확정 및 2022.4분기 잠정).xlsx",
         "통계표(2025.3분기 잠정).xlsx"
@@ -3647,6 +3649,73 @@
           "salesAmount": 78153033.0,
           "startupRate": 2.9127865843164997,
           "closureRate": 2.088456316805935
+        }
+      },
+      {
+        "period": "2025-Q4",
+        "periodEnd": "2025-12",
+        "businessCount": 498850.0,
+        "salesAmount": 73892347.0,
+        "status": "final",
+        "units": {
+          "businessCount": "개",
+          "salesAmount": "백만원",
+          "startupRate": "%",
+          "closureRate": "%"
+        },
+        "region": "부산 전체",
+        "aggregationBasis": "official_busan_total",
+        "source": "부산 Big-데이터웨이브",
+        "sourceFile": "상세결과표(2025년 4분기).xlsx",
+        "sourceSheet": "1 / 6~9_창폐업",
+        "sourceRows": {
+          "businessCount": 6,
+          "salesAmount": 6,
+          "activityBusinessCount": 7,
+          "startupCount": 7,
+          "closureCount": 7
+        },
+        "sourceCells": {
+          "businessCount": "1!BV6",
+          "salesAmount": "1!BZ6",
+          "activityBusinessCount": "6~9_창폐업!R7",
+          "startupCount": "6~9_창폐업!S7",
+          "closureCount": "6~9_창폐업!T7"
+        },
+        "fileSha256": "68a2c64e3f6770886ea96444ac420f5625101f0150d077caf87d2ad39350570b",
+        "retrievedAt": "2026-10-06T02:50:47Z",
+        "sourceType": {
+          "businessCount": "published",
+          "salesAmount": "published",
+          "activityBusinessCount": "published",
+          "startupCount": "published",
+          "closureCount": "published",
+          "startupRate": "calculated_from_official_formula",
+          "closureRate": "calculated_from_official_formula"
+        },
+        "activityBusinessCount": 510340.0,
+        "startupCount": 13435.0,
+        "closureCount": 11490.0,
+        "formula": {
+          "startupRate": "startupCount / activityBusinessCount * 100",
+          "closureRate": "closureCount / activityBusinessCount * 100"
+        },
+        "formulaInputs": {
+          "activityBusinessCount": 510340.0,
+          "startupCount": 13435.0,
+          "closureCount": 11490.0
+        },
+        "publishedRateValidation": {},
+        "startupRate": 2.632558686365952,
+        "closureRate": 2.2514402163263705,
+        "supportingSourceFiles": [
+          "상세결과표(2025년 4분기).xlsx"
+        ],
+        "sourceValues": {
+          "businessCount": 498850.0,
+          "salesAmount": 73892347.0,
+          "startupRate": 2.632558686365952,
+          "closureRate": 2.2514402163263705
         }
       }
     ]
